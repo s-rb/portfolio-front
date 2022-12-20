@@ -2,13 +2,9 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import Salus from "../../Assets/Projects/Salus.png";
-import TheGeekly from "../../Assets/Projects/TheGeekly.png";
-import CarboTrack from "../../Assets/Projects/CarboTrack.png";
-import Sched from "../../Assets/Projects/Sched.png";
-import Aprendiz from "../../Assets/Projects/Aprendiz.png";
+import Skidka4uBot from "../../Assets/Projects/Bot.png"
 
-// todo add projects
+// todo add projects Сделать всплывающее описание по нажатию или наведению
 function Projects() {
   return (
     <Container fluid className="project-section">
@@ -18,64 +14,24 @@ function Projects() {
           My recent <strong className="blue">Projects</strong>
         </h1>
         <p style={{ color: "white" }}>
-          Although, I am a full-time employed backend developer, here you can see my own projects
+          Although, I am a full-time employed backend developer, sometimes I work on my own projects and here you can see them
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={CarboTrack}
+              imgPath={Skidka4uBot}
               isBlog={false}
-              title="CarboTrack"
-              description="CarboTrack is a web application that allows the user to track their carbon footprint based on electricity usage, transportation, and food consumption. My team and I used tensorflow.js to allow for taking pictures of various items to determine their carbon footpring. The result can then be copied to the clipboard and shared through emojis. This was built in 24 hours' time and my team (NextGen) won second prize in SISHACK."
-              ghLink="https://github.com/Dhruvsr/CarboTrack"
-              demoLink="https://dhruv.is-from.space/CarboTrack_Demo.MP4"
+              title="Skidka4uBot"
+              description="Skidka4uBot is a web service and a telegram bot as it's client that allows the user
+              to track real sales at popular online shops. Also it allows the user to subscribe on desired sale percentage,
+              item category or item key words. It uses parsers to acquire information about items: titles, categories, prices etc.
+              The service checks from time to time if a price has reduced enough and if it did, the bot will send you a notification"
+              technologies="Main language is Java 17. App is build using SpringBoot 2. Parsing implemented by using Selenium and Firefox browser.
+              Main services developed as separate microservices. They are connected through RabbitMQ and packaged in docker containers.
+              As database it uses Postgresql"
+              demoLink="https://t.me/skidka_4u_bot"
             />
           </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={Sched}
-              isBlog={false}
-              title="Sched"
-              description="Sched is the all-in-one scheduling app. It is a nifty chrome extension and easily accessible website that improves students' productivity. It features a task organizer based on priority and turning on its focus mode will ensure there are no disturbances during the session as it blocks any distracting websites, while storing information on localstorage. My team (NextGen) won the second prize in NeevHacks."
-              ghLink="https://github.com/Dhruvsr/Sched"
-              demoLink="https://dhruv.is-from.space/1659861963.png"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={Aprendiz}
-              isBlog={false}
-              title="Aprendiz"
-              description="Aprendiz is a Chrome Extension that changes certain words on websites (such as wikipedia.com) to help students learn multiple languages such as Spanish, French,Kannada, German and Dutch. Expand your vocabulary in a particular language while browsing the web, and subconciously picking up a language. The extension is made up of JavaScript and HTML, and its relatively easy-to-use interface makes it effortless to add more language support.
-              "
-              ghLink="https://github.com/Dhruvsr/Aprendiz"
-              demoLink="https://dhruv.is-from.space/2021-10-10-20-08-04.mov"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={Salus}
-              isComp={true}
-              title="Project Salus"
-              description="I participated in a climate change-themed science fest organized by Christ Junior College called Project Salus. It involved a series of climate change-themed science challenges which had to be solved using Python within ten minutes. It also involved the creation of a presentation. I won first place for the theme 'Technica Humanitus'. "
-              ghLink="https://dhruv.is-from.space/1659865480.png"
-              demoLink="https://dhruv.is-from.space/1659865480.png"
-            />
-          </Col>
-
-           <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={TheGeekly}
-              isBlog={false}
-              title="The Geekly"
-              description="I co-founded The Geekly, a magazine exploring the universe through the lens of science. 12 issues have been created till date, featuring original and interesting articles. "
-              // ghLink="not needed here"
-              demoLink="https://thegeekly.net" 
-            />
-          </Col> 
 
         </Row>
       </Container>

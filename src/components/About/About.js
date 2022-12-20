@@ -4,8 +4,6 @@ import Particle from "../Particle";
 import Github from "./Github";
 import Aboutcard from "./AboutCard";
 
-// import laptopImg from "../../Assets/about.png";
-
 function About() {
   return (
     <Container fluid className="about-section">
@@ -25,13 +23,6 @@ function About() {
             </h1>
             <Aboutcard />
           </Col>
-          {/*<Col*/}
-          {/*  md={5}*/}
-          {/*  style={{ paddingTop: "0px", paddingBottom: "0px" }}*/}
-          {/*  className="about-img"*/}
-          {/*>*/}
-          {/*  /!* <img src={laptopImg} alt="about" className="img-fluid" /> *!/*/}
-          {/*</Col>*/}
         </Row>
 
         <Github />

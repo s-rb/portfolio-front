@@ -3,20 +3,12 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import logo from "../Assets/logo-clean.svg";
-import logo_last from "../Assets/logo-last.svg";
-import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
-import { CgGitFork } from "react-icons/cg";
-import { ImBlog } from "react-icons/im";
 import {
-  AiFillStar,
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
 } from "react-icons/ai";
-import { BiDonateHeart } from "react-icons/bi";
-
-import { CgFileDocument } from "react-icons/cg";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
@@ -107,41 +99,6 @@ function NavBar() {
                 Contacts
               </Nav.Link>
             </Nav.Item>
-
-            {/*<Nav.Item>*/}
-            {/*  <Nav.Link*/}
-            {/*    as={Link}*/}
-            {/*    to="src\components\Service"*/}
-            {/*    onClick={() => updateExpanded(false)}*/}
-            {/*  >*/}
-            {/*    <BiDonateHeart*/}
-            {/*      style={{ marginBottom: "2px" }}*/}
-            {/*    />{" "}*/}
-            {/*    Service*/}
-            {/*  </Nav.Link>*/}
-            {/*</Nav.Item>*/}
-
-
-            {/*<Nav.Item>*/}
-            {/*  <Nav.Link*/}
-            {/*    href="https://thegeekly.net"*/}
-            {/*    target="_blank"*/}
-            {/*    rel="noreferrer"*/}
-            {/*  >*/}
-            {/*    <ImBlog style={{ marginBottom: "2px" }} /> Magazine*/}
-            {/*  </Nav.Link>*/}
-            {/*</Nav.Item>*/}
-
-            {/*<Nav.Item className="fork-btn">*/}
-            {/*  <Button*/}
-            {/*    href="https://github.com/s-rb"*/}
-            {/*    target="_blank"*/}
-            {/*    className="fork-btn-inner"*/}
-            {/*  >*/}
-            {/*    <CgGitFork style={{ fontSize: "1.2em" }} />{" "}*/}
-            {/*    <AiFillStar style={{ fontSize: "1.1em" }} />*/}
-            {/*  </Button>*/}
-            {/*</Nav.Item>*/}
           </Nav>
         </Navbar.Collapse>
       </Container>
