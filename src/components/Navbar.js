@@ -7,8 +7,12 @@ import { Link } from "react-router-dom";
 import {
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
-  AiOutlineUser,
+  AiOutlineUser, AiOutlineContacts,
 } from "react-icons/ai";
+import {
+  ImStack
+} from "react-icons/im";
+import {GiSkills} from "react-icons/gi";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
@@ -66,18 +70,31 @@ function NavBar() {
 
             <Nav.Item>
               <Nav.Link
-                as={Link}
-                to="/stack"
-                onClick={() => updateExpanded(false)}
+                  as={Link}
+                  to="/experience"
+                  onClick={() => updateExpanded(false)}
               >
-                <AiOutlineUser style={{ marginBottom: "2px" }} /> Tech stack
+                <GiSkills
+                    style={{ marginBottom: "2px" }}
+                />{" "}
+                Experience
               </Nav.Link>
             </Nav.Item>
 
             <Nav.Item>
               <Nav.Link
                 as={Link}
-                to="/project"
+                to="/stack"
+                onClick={() => updateExpanded(false)}
+              >
+                <ImStack style={{ marginBottom: "2px" }} /> Tech&nbsp;stack
+              </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/projects"
                 onClick={() => updateExpanded(false)}
               >
                 <AiOutlineFundProjectionScreen
@@ -93,7 +110,7 @@ function NavBar() {
                 to="/contacts"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineFundProjectionScreen
+                <AiOutlineContacts
                   style={{ marginBottom: "2px" }}
                 />{" "}
                 Contacts

@@ -14,7 +14,7 @@ function Projects() {
           My recent <strong className="blue">Projects</strong>
         </h1>
         <p style={{ color: "white" }}>
-          Although, I am a full-time employed backend developer, sometimes I work on my own projects and here you can see them
+          Here you can see some of my own side projects
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">

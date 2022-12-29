@@ -1,10 +1,9 @@
 import React from "react";
 import {Col, Container, Row} from "react-bootstrap";
 import Particle from "../Particle";
-import Github from "./Github";
-import Aboutcard from "./AboutCard";
+import ExperienceCard from "./ExperienceCard";
 
-function About() {
+function Experience() {
   return (
     <Container fluid className="about-section">
       <Particle />
@@ -19,16 +18,15 @@ function About() {
             }}
           >
             <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
-              About <strong className="blue">me</strong>
+                Working <strong className="blue">timeline</strong>
             </h1>
-            <Aboutcard />
+            <ExperienceCard />
           </Col>
         </Row>
 
-        <Github />
       </Container>
     </Container>
   );
 }
 
-export default About;
+export default Experience;
