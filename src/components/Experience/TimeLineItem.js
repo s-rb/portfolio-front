@@ -1,10 +1,10 @@
 import React from "react";
 import {Card} from "react-bootstrap";
 
-export const TimeLineItem = ({data, key}) => {
+export const TimeLineItem = ({data, theKey}) => {
     return (
-        <li className="timeline-item">
-            <Card key={key} className="mb-4 timeline-item-content" style={{ width: '18rem' }} bg="dark">
+        <li key={theKey} className="timeline-item">
+            <Card className="mb-4 p-1 timeline-item-content" bg="dark">
                 <Card.Body>
                     {data.period && <Card.Text className="timeline-period">{data.period}</Card.Text>}
                     {data.position && <Card.Title className="timeline-company">{data.position}</Card.Title>}

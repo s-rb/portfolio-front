@@ -20,6 +20,25 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Contacts from "./components/Contacts/Contacts";
 
+// Disable logs
+(function () {
+  var method;
+  var noop = function noop() { };
+  var methods = [
+    'assert', 'clear', 'count', 'debug', 'dir', 'dirxml', 'error',
+    'exception', 'group', 'groupCollapsed', 'groupEnd', 'info', 'log',
+    'markTimeline', 'profile', 'profileEnd', 'table', 'time', 'timeEnd',
+    'timeStamp', 'trace', 'warn'
+  ];
+  var length = methods.length;
+  var console = (window.console = window.console || {});
+
+  while (length--) {
+    method = methods[length];
+    console[method] = noop;
+  }
+}());
+
 function App() {
   const [load, upadateLoad] = useState(true);
 
