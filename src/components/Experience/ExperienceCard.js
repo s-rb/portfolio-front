@@ -4,13 +4,9 @@ import {ExperienceData, NotRelevantExperienceData} from "./ExperienceData";
 import {TimeLine} from "./TimeLine";
 
 function ExperienceCard() {
-    // const expData = [];
-    // ExperienceData.forEach(o => expData.push(o));
-    // NotRelevantExperienceData.forEach(o => expData.push(o));
-
     return (
         <Card className="quote-card-view">
-            <Card.Body>
+            <Card.Body classname="timeline-card-body">
                 <TimeLine expData={[].concat(...ExperienceData, ...NotRelevantExperienceData)} listKey={1}/>
             </Card.Body>
         </Card>
