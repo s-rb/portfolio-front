@@ -435,6 +435,10 @@ button:focus {
         left: 3rem;
     }
 
+    .project-description {
+        width: auto;
+    }
+
     .timeline-item {
         align-self: flex-start;
         justify-content: flex-start;
@@ -516,7 +520,7 @@ button:focus {
         justify-content: start;
     }
 
-    .card-body {
+    .timeline-item-card .card-body {
         width: 300px !important;
     }
 }
@@ -534,7 +538,7 @@ button:focus {
         width: 250px !important;
     }
 
-    .card-body {
+    .timeline-item-card .card-body {
         width: 250px !important;
     }
 
@@ -629,7 +633,7 @@ button:focus {
         justify-content: start;
     }
 
-    .card-body {
+    .timeline-item-card .card-body {
         width: 250px !important;
     }
 

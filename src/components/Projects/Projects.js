@@ -10,6 +10,9 @@ import AndroidAgarImg from "../../Assets/Projects/AndroidAgar.png"
 import CatchTheDrop from "../../Assets/Projects/JavaGameCatch.png"
 import InteractivePoster from "../../Assets/Projects/InteractivePoster.png"
 import CostsLogImg from "../../Assets/Projects/CostsLog.png"
+import PriceWatchFront from "../../Assets/Projects/PriceWatchFront.png"
+import JapanCafeImg from "../../Assets/Projects/JapanCafe.png"
+import PortfolioImg from "../../Assets/Projects/Portfolio.png"
 
 // todo add projects Сделать всплывающее описание по нажатию или наведению
 function Projects() {
@@ -23,8 +26,8 @@ function Projects() {
                 <p style={{color: "white"}}>
                     Here you can see some of my side projects
                 </p>
-                <Row style={{justifyContent: "center", paddingBottom: "10px"}}>
-                    <Col md={4} className="project-card">
+                <Row lg={3} sm={1} md={2} xs={1} style={{justifyContent: "center", paddingBottom: "10px"}}>
+                    <Col className="project-card">
                         <ProjectCard
                             imgPath={Skidka4uBotImg}
                             isBlog={false}
@@ -40,7 +43,7 @@ function Projects() {
                         />
                     </Col>
 
-                    <Col md={4} className="project-card">
+                    <Col className="project-card">
                         <ProjectCard
                             imgPath={QuizImg}
                             isBlog={false}
@@ -56,7 +59,7 @@ function Projects() {
                         />
                     </Col>
 
-                    <Col md={4} className="project-card">
+                    <Col className="project-card">
                         <ProjectCard
                             imgPath={BlogImg}
                             isBlog={false}
@@ -71,7 +74,7 @@ function Projects() {
                         />
                     </Col>
 
-                    <Col md={4} className="project-card">
+                    <Col className="project-card">
                         <ProjectCard
                             imgPath={JapanCafeImg}
                             isBlog={false}
@@ -83,7 +86,33 @@ function Projects() {
                         />
                     </Col>
 
-                    <Col md={4} className="project-card">
+                    <Col className="project-card">
+                        <ProjectCard
+                            imgPath={PriceWatchFront}
+                            isBlog={false}
+                            title="Skidki4u Frontend"
+                            description="React application for pricewatching backend application. It is another client for the backend.
+                            The first one and main is telegram bot Skidka4uBot (https://t.me/skidka_4u_bot).
+                            This applications shows you notifications when backend has found any sales"
+                            technologies="TypeScript, ReactJS library. Html, Css"
+                            demoLink={"http://skidki4u.surkoff.com"}
+                        />
+                    </Col>
+
+                    <Col className="project-card">
+                        <ProjectCard
+                            imgPath={PortfolioImg}
+                            isBlog={false}
+                            title="Portfolio website"
+                            description="This is my portfolio website. Actually, you are visiting it right now.
+                            It built with Javascript and ReactJs library"
+                            technologies="Javascript, ReactJS library. Html, Css"
+                            ghLink={"https://github.com/s-rb/portfolio-front"}
+                            demoLink={"https://surkoff.com"}
+                        />
+                    </Col>
+
+                    <Col className="project-card">
                         <ProjectCard
                             imgPath={CostsLogImg}
                             isBlog={false}
@@ -96,7 +125,18 @@ function Projects() {
                         />
                     </Col>
 
-                    <Col md={4} className="project-card">
+                    <Col className="project-card">
+                        <ProjectCard
+                            imgPath={InteractivePoster}
+                            isBlog={false}
+                            title="Interactive poster"
+                            description="This is an interactive poster for the Valentine's Day. It's built with Java and LibGdx library. The application is created on GeekBrains intensive"
+                            technologies="Uses language is Java 11. Additional library LibGdx"
+                            ghLink={"https://github.com/s-rb/interactive-java-poster"}
+                        />
+                    </Col>
+
+                    <Col className="project-card">
                         <ProjectCard
                             imgPath={HashGen}
                             isBlog={false}
@@ -112,18 +152,7 @@ function Projects() {
                         />
                     </Col>
 
-                    <Col md={4} className="project-card">
-                        <ProjectCard
-                            imgPath={AndroidAgarImg}
-                            isBlog={false}
-                            title="Android game like Agar.io"
-                            description="Simple Android game like agar.io. It uses java and gradle"
-                            technologies="Main language is Java 11. It is built with gradle"
-                            ghLink={"https://github.com/s-rb/simple-android-java-game"}
-                        />
-                    </Col>
-
-                    <Col md={4} className="project-card">
+                    <Col className="project-card">
                         <ProjectCard
                             imgPath={CatchTheDrop}
                             isBlog={false}
@@ -134,14 +163,14 @@ function Projects() {
                         />
                     </Col>
 
-                    <Col md={4} className="project-card">
+                    <Col className="project-card">
                         <ProjectCard
-                            imgPath={InteractivePoster}
+                            imgPath={AndroidAgarImg}
                             isBlog={false}
-                            title="Interactive poster"
-                            description="This is an interactive poster for the Valentine's Day. It's built with Java and LibGdx library. The application is created on GeekBrains intensive"
-                            technologies="Uses language is Java 11. Additional library LibGdx"
-                            ghLink={"https://github.com/s-rb/interactive-java-poster"}
+                            title="Android game like Agar.io"
+                            description="Simple Android game like agar.io. It uses java and gradle"
+                            technologies="Main language is Java 11. It is built with gradle"
+                            ghLink={"https://github.com/s-rb/simple-android-java-game"}
                         />
                     </Col>
                 </Row>

@@ -10,7 +10,7 @@ function ProjectCards(props) {
             <Card.Img variant="top" src={props.imgPath} alt="card-img"/>
             <Card.Body>
                 <Card.Title>{props.title}</Card.Title>
-                <Card.Text style={{textAlign: "justify"}}>{props.description}</Card.Text>
+                <p style={{textAlign: "justify"}} className="project-description">{props.description}</p>
                 {props.ghLink &&
                 <Button variant="primary" href={props.ghLink} target="_blank">
                     <BsPaperclip/> &nbsp;{props.isComp ? "Certificate" : "Code"}

@@ -5,7 +5,7 @@ export const TimeLineItem = ({data, theKey}) => {
     return (
         <li key={theKey} className="timeline-item">
             <Card className="mb-4 p-1 timeline-item-content" bg="dark">
-                <Card.Body>
+                <Card.Body className="timeline-item-card">
                     {data.period && <Card.Text className="timeline-period">{data.period}</Card.Text>}
                     {data.position && <Card.Title className="timeline-company">{data.position}</Card.Title>}
                     {data.company && <Card.Link className="timeline-company-url"
