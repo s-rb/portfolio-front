@@ -13,7 +13,7 @@ function Contacts() {
           <Col md={12} className="home-about-social">
             <h1>Connect with me</h1>
             <p>
-              I'm available on these <span className="blue">platforms </span>
+              Feel free to <span className="blue">contact</span>
             </p>
             <ul className="home-about-social-links">
               <li className="social-icons">
