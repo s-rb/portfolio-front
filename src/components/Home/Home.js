@@ -7,7 +7,6 @@ function Home() {
   return (
     <section>
       <Container fluid className="home-section" id="home">
-        <Particle />
         <Container className="home-content">
           <Row>
             <Col md={7} className="home-header">
@@ -21,6 +20,7 @@ function Home() {
             </Col>
           </Row>
         </Container>
+        <Particle />
       </Container>
     </section>
   );

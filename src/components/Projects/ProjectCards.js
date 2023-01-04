@@ -19,7 +19,7 @@ function ProjectCards(props) {
                 {"\n"}
                 {!props.isComp && props.demoLink &&
                 (<Button variant="primary" href={props.demoLink} target="_blank" style={{marginLeft: "10px"}}>
-                    <CgWebsite/> &nbsp;{"Demo"}
+                    <CgWebsite/> &nbsp;{"Try it"}
                 </Button>)}
             </Card.Body>
         </Card>

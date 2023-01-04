@@ -180,6 +180,9 @@ button:focus {
     .navbar-nav .nav-item a::after {
         display: none !important;
     }
+    .nav-link {
+        padding: 0.7rem 1rem !important;
+    }
 }
 
 .navbar-brand {
@@ -193,8 +196,6 @@ button:focus {
 
 .logo_last {
     height: 25px !important;
-    /*padding-right: 1rem !important;*/
-    /*padding-left: 1rem !important;*/
 }
 
 .navbar-nav .nav-link {
@@ -205,12 +206,6 @@ button:focus {
 
 .nav-link {
     padding: 0.8rem 1rem !important;
-}
-
-@media (max-width: 767px) {
-    .nav-link {
-        padding: 0.7rem 1rem !important;
-    }
 }
 
 .navbar-nav .nav-item {
@@ -285,6 +280,8 @@ button:focus {
 
 #tsparticles {
     position: fixed !important;
+    top: 0;
+    left: 0;
     background-repeat: no-repeat !important;
     background-size: cover !important;
     width: 100%;
@@ -323,10 +320,6 @@ button:focus {
     padding-left: 45px !important;
 }
 
-.main-name {
-    color: var(--main-color) !important;
-}
-
 .Typewriter__wrapper {
     font-size: 2.2em !important;
     color: var(--main-color) !important;
@@ -349,7 +342,6 @@ button:focus {
         display: none !important;
     }
 }
-
 
 .home-about-section {
     position: relative;
@@ -429,7 +421,6 @@ button:focus {
     justify-content: flex-start;
     padding-left: 30px;
     list-style: none;
-    /*padding-right: 0;*/
 }
 
 @media (max-width: 767px) {
@@ -649,12 +640,6 @@ button:focus {
 }
 
 .timeline-item-content {
-    /*box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);*/
-    /*border-radius: 5px;*/
-    /*background-color: #fff;*/
-    /*display: flex;*/
-    /*flex-direction: column;*/
-    /*align-items: flex-end;*/
     padding: 15px;
     position: relative;
     width: 400px !important;
