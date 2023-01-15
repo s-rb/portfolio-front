@@ -12,9 +12,9 @@ function AboutCard() {
                         my work</p>
                     <p>Though I'm a full-time employed programmer, I like to develop side projects and learn new
                         technologies, when I have spare time</p>
-                    <p>Here you can see my presentation, technologies and languages used by me (e.i. tech-stack) and
+                    <p>Here you can see my presentation, technologies, and languages used by me (e.i. tech-stack) and
                         some of my side projects</p>
-                    <p>Feel free to contact me in any case</p>
+                    <p>Feel free to contact me in any case </p>
                 </blockquote>
             </Card.Text>
         </Card>

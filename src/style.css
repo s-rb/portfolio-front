@@ -11,7 +11,6 @@ html {
             rgba(12, 10, 22, 0.863)
     );
 
-    /*--imp-text-color: #40AABF;*/
     --imp-text-color: #4169e1;
     --main-color: #4169e1;
 }
@@ -296,7 +295,6 @@ button:focus {
 .home-section {
     position: relative;
     z-index: -1;
-     /*background-image: var(--image-gradient), url(./Assets/home-bg.jpg);*/
     background-image: var(--section-background-color) !important;
     background-position: top center;
     background-repeat: no-repeat;
