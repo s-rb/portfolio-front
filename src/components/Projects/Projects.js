@@ -13,6 +13,7 @@ import CostsLogImg from "../../Assets/Projects/CostsLog.png"
 import PriceWatchFront from "../../Assets/Projects/PriceWatchFront.png"
 import JapanCafeImg from "../../Assets/Projects/JapanCafe.png"
 import PortfolioImg from "../../Assets/Projects/Portfolio.png"
+import ChatGptTgBotImg from "../../Assets/Projects/ChatGptTgBot.png"
 
 // todo Сделать всплывающее описание по нажатию или наведению
 function Projects() {
@@ -64,6 +65,36 @@ function Projects() {
 
                     <Col className="project-card">
                         <ProjectCard
+                            imgPath={JapanCafeImg}
+                            isBlog={false}
+                            title="Japan cafe"
+                            description="React application for the Japan cafe website made for study ReactJS purpose"
+                            technologies="Javascript language, ReactJS library. Html, CSS"
+                            ghLink={"https://bitbucket.org/surkovr/japan-cafe/src/master/"}
+                            demoLink={"http://japan-cafe.surkoff.com"}
+                        />
+                    </Col>
+
+                    <Col className="project-card">
+                        <ProjectCard
+                            imgPath={ChatGptTgBotImg}
+                            isBlog={false}
+                            title="ChatGpt telegram bot"
+                            description="A Telegram bot for sending requests to ChatGpt from OpenAI. Unlimited access
+                            for the administrator. Ability for the administrator to approve access for third-party users.
+                            Storing user information in a file and in RAM. Written partly with ChatGpt to test the
+                            capabilities of modern OpenAI neural networks"
+                            technologies="Application written in Java 17. Building and dependency control with Apache
+                            Maven. The telegram bots library org.telegram.telegrambots was used to implement the
+                            telegram bot, and com.theokanning.openai-gpt3-java for OpenAI integration. This is a
+                            lightweight application with minimal technologies and dependencies"
+                            ghLink={"https://github.com/s-rb/chatgpt-bot"}
+                            demoLink="https://t.me/surkoff_chatgpt_bot"
+                        />
+                    </Col>
+
+                    <Col className="project-card">
+                        <ProjectCard
                             imgPath={BlogImg}
                             isBlog={false}
                             title="Blog backend application"
@@ -76,18 +107,6 @@ function Projects() {
                             on SpringFramework. MySql as database. JUnit for testing code, Cage for captcha generation,
                             and Jakarta Mail for emails"
                             ghLink={"https://github.com/s-rb/blog-engine"}
-                        />
-                    </Col>
-
-                    <Col className="project-card">
-                        <ProjectCard
-                            imgPath={JapanCafeImg}
-                            isBlog={false}
-                            title="Japan cafe"
-                            description="React application for the Japan cafe website made for study ReactJS purpose"
-                            technologies="Javascript language, ReactJS library. Html, CSS"
-                            ghLink={"https://bitbucket.org/surkovr/japan-cafe/src/master/"}
-                            demoLink={"http://japan-cafe.surkoff.com"}
                         />
                     </Col>
 
