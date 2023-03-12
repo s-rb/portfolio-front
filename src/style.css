@@ -13,6 +13,7 @@ html {
 
     --imp-text-color: #4169e1;
     --main-color: #4169e1;
+    --text-color: white;
 }
 
 .blue {
@@ -103,7 +104,7 @@ button:focus {
 .sticky {
     background-color: #0D1A26 !important;
     transition: all 0.3s ease-out 0s !important;
-    box-shadow: 0px 10px 10px 0px #0D1A26 !important;
+    box-shadow: 0 10px 10px 0 #0D1A26 !important;
     backdrop-filter: blur(15px) !important;
 }
 
@@ -179,6 +180,7 @@ button:focus {
     .navbar-nav .nav-item a::after {
         display: none !important;
     }
+
     .nav-link {
         padding: 0.7rem 1rem !important;
     }
@@ -523,6 +525,12 @@ button:focus {
         width: 350px !important;
         max-width: 100% !important;
     }
+    .navbar {
+        padding: 0.2rem 1rem !important;
+    }
+    .navbar-nav .nav-item {
+        margin-left: 0;
+    }
 }
 
 @media (max-width: 499px) {
@@ -634,6 +642,10 @@ button:focus {
         align-items: flex-start;
         max-width: 100% !important;
         width: 250px !important;
+    }
+    .social-icons {
+        padding-right: 5px !important;
+        padding-left: 5px !important;
     }
 }
 
@@ -750,7 +762,7 @@ button:focus {
     padding-bottom: 8px !important;
 }
 
-.footer-copywright {
+.footer-copyright {
     text-align: center !important;
 }
 
@@ -760,7 +772,7 @@ button:focus {
 }
 
 @media (max-width: 767px) {
-    .footer-copywright {
+    .footer-copyright {
         text-align: center !important;
     }
 
@@ -857,9 +869,9 @@ button:focus {
 }
 
 .blog-img {
-    padding: 0px !important;
+    padding: 0 !important;
     opacity: 0.8 !important;
-    border-radius: 0px !important;
+    border-radius: 0 !important;
 }
 
 .btn-primary {

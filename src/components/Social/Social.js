@@ -1,0 +1,68 @@
+import {FaEnvelope, FaLinkedinIn} from "react-icons/fa";
+import {AiFillGithub} from "react-icons/ai";
+import {SiBitbucket} from "react-icons/si";
+import React from "react";
+import cvStyle from "../CV/Cv.module.css";
+import {BsFiletypePdf} from "react-icons/bs";
+
+export const Social = (props) => {
+    const iconsClassName = `${props.iconsStyle ? cvStyle[props.iconsStyle] : "icon-colour home-social-icons"}`;
+    return <>
+        <ul className={props.className ?? "home-about-social-links"}>
+            <li className="social-icons" key={'s0'}>
+                <a
+                    href="https://www.linkedin.com/in/roman-surkoff"
+                    target="_blank"
+                    rel="noreferrer"
+                    className={iconsClassName}
+                    key={'as0'}
+                >
+                    <FaLinkedinIn/>
+                </a>
+            </li>
+            <li className="social-icons" key={'s1'}>
+                <a
+                    href="mailto:surkoff.com@google.com"
+                    target="_blank"
+                    rel="noreferrer"
+                    className={iconsClassName}
+                    key={'as1'}
+                >
+                    <FaEnvelope/>
+                </a>
+            </li>
+            <li className="social-icons" key={'s2'}>
+                <a
+                    href="https://github.com/s-rb"
+                    target="_blank"
+                    rel="noreferrer"
+                    className={iconsClassName}
+                    key={'as2'}
+                >
+                    <AiFillGithub/>
+                </a>
+            </li>
+            <li className="social-icons" key={'s3'}>
+                <a
+                    href="https://bitbucket.org/surkovr/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className={iconsClassName}
+                    key={'as3'}
+                >
+                    <SiBitbucket/>
+                </a>
+            </li>
+            {props.iconsStyle && <li className="social-icons" key={'s4'}>
+                <a
+                    href="/cv/Roman_Surkov_Cv.pdf"
+                    download={"Roman_Surkov_Cv.pdf"}
+                    target="_blank"
+                    className={iconsClassName}
+                >
+                    <BsFiletypePdf/>
+                </a>
+            </li>}
+        </ul>
+    </>
+}

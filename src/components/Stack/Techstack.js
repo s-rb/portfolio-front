@@ -13,7 +13,6 @@ import {
     SiGradle,
     SiHtml5,
     SiIntellijidea,
-    SiJava,
     SiJavascript,
     SiJenkins,
     SiJunit5,
@@ -40,6 +39,7 @@ import {
 } from "react-icons/si";
 import {TbApi, TbDatabase} from "react-icons/tb";
 import {MdSchema} from "react-icons/md";
+import {FaJava} from "react-icons/fa";
 import Container from "react-bootstrap/Container";
 
 function Techstack() {
@@ -47,7 +47,7 @@ function Techstack() {
         <Container>
             <h1 className="project-heading">Primary <strong className="blue">Stack</strong></h1>
             <Row style={{justifyContent: "center", paddingBottom: "50px"}}>
-                <Col xs={4} md={2} className="tech-icons"><SiJava/><p className="tech-icon-text">Java</p></Col>
+                <Col xs={4} md={2} className="tech-icons"><FaJava/><p className="tech-icon-text">Java</p></Col>
                 <Col xs={4} md={2} className="tech-icons"><SiSpring/><p className="tech-icon-text">Spring</p></Col>
                 <Col xs={4} md={2} className="tech-icons"><SiSpringboot/><p className="tech-icon-text">SpringBoot</p></Col>
                 <Col xs={4} md={2} className="tech-icons"><TbDatabase/><p className="tech-icon-text">Databases</p></Col>

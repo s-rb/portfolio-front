@@ -8,15 +8,15 @@ function Footer() {
     return (
         <Container fluid className="footer">
             <Row>
-                <Col md="4" className="footer-copywright">
+                <Col md="4" className="footer-copyright">
                     <h3>By Roman Surkov</h3>
                 </Col>
-                <Col md="4" className="footer-copywright">
+                <Col md="4" className="footer-copyright">
                     <h3>Copyright © {year}</h3>
                 </Col>
                 <Col md="4" className="footer-body">
                     <ul className="footer-icons">
-                        <li className="social-icons">
+                        <li className="social-icons" key={'fs0'}>
                             <a href="https://www.linkedin.com/in/roman-surkoff/"
                                style={{color: "white"}}
                                target="_blank"
@@ -26,7 +26,7 @@ function Footer() {
                             </a>
                         </li>
 
-                        <li className="social-icons">
+                        <li className="social-icons" key={'fs1'}>
                             <a
                                 href="mailto:surkoff.com@google.com"
                                 target="_blank"

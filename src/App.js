@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Preloader from "../src/components/Pre";
 import Navbar from "./components/Navbar";
+import CV from "./components/CV/CV";
 import Home from "./components/Home/Home";
 import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
@@ -22,16 +23,16 @@ import Contacts from "./components/Contacts/Contacts";
 
 // Disable logs
 (function () {
-  var method;
-  var noop = function noop() { };
-  var methods = [
+  let method;
+  let noop = function noop() { };
+  let methods = [
     'assert', 'clear', 'count', 'debug', 'dir', 'dirxml', 'error',
     'exception', 'group', 'groupCollapsed', 'groupEnd', 'info', 'log',
     'markTimeline', 'profile', 'profileEnd', 'table', 'time', 'timeEnd',
     'timeStamp', 'trace', 'warn'
   ];
-  var length = methods.length;
-  var console = (window.console = window.console || {});
+  let length = methods.length;
+  let console = (window.console = window.console || {});
 
   while (length--) {
     method = methods[length];
@@ -57,13 +58,14 @@ function App() {
         <Navbar />
         <ScrollToTop />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/experience" element={<Experience />} />
-          <Route path="/stack" element={<Stack />} />
-          <Route path="/contacts" element={<Contacts />} />
-          <Route path="*" element={<Navigate to="/"/>} />
+          <Route key={"ap01"} path="/" element={<Home />} />
+          <Route key={"ap02"} path="/projects" element={<Projects />} />
+          <Route key={"ap03"} path="/cv" element={<CV key={'ap030'}/>} />
+          <Route key={"ap04"} path="/about" element={<About />} />
+          <Route key={"ap05"} path="/experience" element={<Experience />} />
+          <Route key={"ap06"} path="/stack" element={<Stack />} />
+          <Route key={"ap07"} path="/contacts" element={<Contacts />} />
+          <Route key={"ap08"} path="*" element={<Navigate to="/"/>} />
         </Routes>
         <Footer />
       </div>

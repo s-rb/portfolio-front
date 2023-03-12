@@ -1,0 +1,157 @@
+.contacts {
+    justify-content: center !important;
+    padding-top: 10px !important;
+    display: inline-block !important;
+    position: relative !important;
+    padding-inline-start: 0 !important;
+    text-align: right;
+}
+
+.social {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.cvContactsIcons {
+    position: relative !important;
+    display: inline-block !important;
+    width: 40px !important;
+    height: 40px !important;
+    text-align: center !important;
+    font-size: 1.2em !important;
+    line-height: 2em !important;
+    transition: 0.5s !important;
+}
+.download {
+    padding-top: 10px;
+    text-align: left;
+}
+.download a {
+    margin-left: 15px;
+    margin-right: 15px;
+    position: relative !important;
+    display: inline-block !important;
+    width: 40px !important;
+    height: 40px !important;
+    text-align: center !important;
+    font-size: 1.2em !important;
+    line-height: 2em !important;
+    transition: 0.5s !important;
+    color: var(--text-color);
+}
+
+a.cvContactsIcons {
+    color: white !important;
+}
+
+.cvDescription {
+    color: var(--text-color);
+    text-align: justify;
+    margin: 0;
+    padding: 0 0 10px 10px;
+}
+
+.cvSummary {
+    color: var(--text-color);
+    text-align: justify;
+    padding: 10px;
+}
+
+.cvTitle {
+    color: var(--text-color);
+    padding: 10px;
+}
+
+.cvCompetencies {
+    color: var(--text-color);
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    padding: 10px;
+}
+
+.cvCompany {
+    color: var(--text-color);
+    text-align: left;
+    font-size: 1.6rem;
+    padding-top: 5px;
+}
+
+.cvCompanyMinor {
+    color: var(--text-color);
+    text-align: left;
+    font-size: 1.3rem;
+    padding-top: 5px;
+}
+
+.cvExperiencePeriodDiff {
+    color: var(--text-color);
+    font-weight: bold;
+    text-align: right;
+    font-size: 1.2rem;
+    display: grid;
+    align-self: center;
+}
+
+.cvExperiencePeriod {
+    color: var(--text-color);
+    font-style: italic;
+    text-align: right;
+    display: grid;
+    align-self: center;
+    font-size: 0.8rem;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.educationHeader {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+
+.cvExperienceHeader {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+
+.cvPosition {
+    color: var(--text-color);
+    font-weight: bold;
+    text-align: left;
+    font-size: 1.2rem;
+    padding: 5px 0;
+}
+
+.position {
+    color: var(--text-color);
+}
+
+@media (max-width: 999px) {
+    .cvCompetencies {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media (max-width: 767px) {
+    .cvCompetencies {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .cvExperiencePeriod {
+        display: none;
+    }
+}
+
+@media (max-width: 499px) {
+    .cvCompetencies {
+        grid-template-columns: 1fr 1fr;
+    }
+    .cvCompany {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 399px) {
+    .cvCompetencies {
+        grid-template-columns: 1fr;
+    }
+}
