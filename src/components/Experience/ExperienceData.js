@@ -161,9 +161,17 @@ export const CoreCompetencies = [
 
 export const Certifications = [
     {
+        company: "Specialist - Computer Training Center",
+        date: "06.2023",
+        name: "Refactoring as a systematic approach",
+    },{
+        company: "IBS Training center",
+        date: "05.2023",
+        name: "Design patterns (GoF). Java edition. Technologies and Tools for Software and Information Systems Development"
+    },{
         company: "IBS Training center",
         date: "12.2022",
-        name: "Technologies and Tools for Software and Information Systems Development. Java Efficiency"
+        name: "Java Efficiency. Technologies and Tools for Software and Information Systems Development"
     }, {
         company: "Mail.ru",
         date: "04.2020",

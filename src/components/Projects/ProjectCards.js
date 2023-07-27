@@ -21,6 +21,10 @@ function ProjectCards(props) {
                 (<Button variant="primary" href={props.demoLink} target="_blank" style={{marginLeft: "10px"}}>
                     <CgWebsite/> &nbsp;{"Try it"}
                 </Button>)}
+                {"\n"}
+                {"\n"}
+                {props.addButtonText &&
+                <Button variant="primary">{props.addButtonText}</Button>}
             </Card.Body>
         </Card>
     );

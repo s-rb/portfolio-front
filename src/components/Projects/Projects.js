@@ -42,7 +42,7 @@ function Projects() {
                             was implemented by using Selenium and Firefox browser.
                             Main services are developed as separate microservices. They are connected through RabbitMQ
                             and packaged in docker containers. As a database it uses Postgresql"
-                            demoLink="https://t.me/skidka_4u_bot"
+                            addButtonText="Disabled"
                         />
                     </Col>
 
@@ -89,7 +89,6 @@ function Projects() {
                             telegram bot, and com.theokanning.openai-gpt3-java for OpenAI integration. This is a
                             lightweight application with minimal technologies and dependencies"
                             ghLink={"https://github.com/s-rb/chatgpt-bot"}
-                            demoLink="https://t.me/surkoff_chatgpt_bot"
                         />
                     </Col>
 
@@ -120,7 +119,7 @@ function Projects() {
                             (https://t.me/skidka_4u_bot). This application shows you notifications when the backend
                             has found any sales"
                             technologies="TypeScript, ReactJS library, Html, Css"
-                            demoLink={"http://skidki4u.surkoff.com"}
+                            addButtonText="Disabled"
                         />
                     </Col>
 

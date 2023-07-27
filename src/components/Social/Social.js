@@ -1,6 +1,6 @@
 import {FaEnvelope, FaLinkedinIn} from "react-icons/fa";
 import {AiFillGithub} from "react-icons/ai";
-import {SiBitbucket} from "react-icons/si";
+import {SiBitbucket, SiLeetcode} from "react-icons/si";
 import React from "react";
 import cvStyle from "../CV/Cv.module.css";
 import {BsFiletypePdf} from "react-icons/bs";
@@ -40,6 +40,17 @@ export const Social = (props) => {
                     key={'as2'}
                 >
                     <AiFillGithub/>
+                </a>
+            </li>
+            <li className="social-icons" key={'s22'}>
+                <a
+                    href="https://leetcode.com/surkoff/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className={iconsClassName}
+                    key={'as22'}
+                >
+                    <SiLeetcode/>
                 </a>
             </li>
             <li className="social-icons" key={'s3'}>
