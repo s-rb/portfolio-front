@@ -69,6 +69,7 @@ export const Social = (props) => {
                     download={"Roman_Surkov_Cv.pdf"}
                     target="_blank"
                     className={iconsClassName}
+                    style={{textDecoration: "none" }}
                 >
                     CV
                 </a>
