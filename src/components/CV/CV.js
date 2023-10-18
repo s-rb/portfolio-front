@@ -9,8 +9,9 @@ import {
     Education,
     EngineeringExperienceData,
     ExperienceData
-} from "../Experience/ExperienceData";
+} from "../../ExperienceData";
 import styles from './Cv.module.css';
+import {Summary} from "../../Summary";
 
 function CV() {
     function getDateDiffString(datesStringArray) {
@@ -48,19 +49,7 @@ function CV() {
                 <h1 className="project-heading">ROMAN <span className="main-color">SURKOV</span></h1>
                 <Social className={styles.contacts} iconsStyle={'cvContactsIcons'}/>
                 <h1 className={styles.position}>Software engineer</h1>
-                <div className={styles.cvSummary}>
-                    <p>I am a results-oriented and experienced Java developer with extensive knowledge in key frameworks
-                        and technologies such as Spring/SpringBoot, Maven, Gradle, Git, databases, Docker, JUnit,
-                        REST/SOAP, and more. I have over 4 years of experience developing and implementing complex
-                        projects in various industries, including banking software and government portals.</p>
-                    <p>After graduating from university in 2009, I spent 10 years working in the development of various
-                        engineering systems, leading design teams and managing project implementation. However, I always
-                        had a strong desire to developing software. That is why I decided to become a Java developer,
-                        despite the downgrade in career.</p>
-                    <p>My passion for programming drives me towards personal and career growth, with next goal to become
-                        a team leader. I would be excited to join a team of professionals to solve complex challenges
-                        and create innovative projects</p>
-                </div>
+                <div className={styles.cvSummary}>{Summary}</div>
 
                 <h2 className={styles.cvTitle}>Core Competencies</h2>
                 <ul className={styles.cvCompetencies}>

@@ -3,6 +3,7 @@ import {Col, Container, Row} from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import Skidka4uBotImg from "../../Assets/Projects/Bot.png"
+import EcommerceImg from "../../Assets/Projects/EcommerceShop.png"
 import QuizImg from "../../Assets/Projects/Quiz.png"
 import HashGen from "../../Assets/Projects/HashGenerator.png"
 import BlogImg from "../../Assets/Projects/BlogFrontEnd.png"
@@ -30,19 +31,26 @@ function Projects() {
                 <Row lg={3} sm={1} md={2} xs={1} style={{justifyContent: "center", paddingBottom: "10px"}}>
                     <Col className="project-card">
                         <ProjectCard
-                            imgPath={Skidka4uBotImg}
+                            imgPath={EcommerceImg}
                             isBlog={false}
-                            title="Skidka4uBot"
-                            description="Skidka4uBot is a web service and a telegram bot as its client that allows the
-                            user to track real sales of popular online shops. Also, it allows the user to subscribe to
-                            desired sale percentage, item category, or item keywords. It uses parsers to acquire
-                            information about items: titles, categories, prices, etc. The service checks from time to
-                            time if a price has been reduced enough and if it did, the bot will send you a notification"
-                            technologies="The main language is Java 17. The app is built using SpringBoot 2. Parsing
-                            was implemented by using Selenium and Firefox browser.
-                            Main services are developed as separate microservices. They are connected through RabbitMQ
-                            and packaged in docker containers. As a database it uses Postgresql"
-                            addButtonText="Disabled"
+                            title="Ecommerce Full Stack Application"
+                            description="Ecommerce Full Stack Springboot/Angular Application, integration with Payment processor via API"
+                            technologies="The backend main language is Java 17 and the app is built using SpringBoot 2.
+                            The frontend main language is TypeScript and its built using Angular"
+                            backEnd={"https://github.com/s-rb/ecommerce-backend"}
+                            frontEnd={"https://github.com/s-rb/ecommerce-frontend"}
+                        />
+                    </Col>
+
+                    <Col className="project-card">
+                        <ProjectCard
+                            imgPath={JapanCafeImg}
+                            isBlog={false}
+                            title="Japan cafe"
+                            description="React application for the Japan cafe website made for study ReactJS purpose"
+                            technologies="Javascript language, ReactJS library. Html, CSS"
+                            ghLink={"https://bitbucket.org/surkovr/japan-cafe/src/master/"}
+                            demoLink={"http://japan-cafe.surkoff.com"}
                         />
                     </Col>
 
@@ -65,13 +73,19 @@ function Projects() {
 
                     <Col className="project-card">
                         <ProjectCard
-                            imgPath={JapanCafeImg}
+                            imgPath={Skidka4uBotImg}
                             isBlog={false}
-                            title="Japan cafe"
-                            description="React application for the Japan cafe website made for study ReactJS purpose"
-                            technologies="Javascript language, ReactJS library. Html, CSS"
-                            ghLink={"https://bitbucket.org/surkovr/japan-cafe/src/master/"}
-                            demoLink={"http://japan-cafe.surkoff.com"}
+                            title="Skidka4uBot"
+                            description="Skidka4uBot is a web service and a telegram bot as its client that allows the
+                            user to track real sales of popular online shops. Also, it allows the user to subscribe to
+                            desired sale percentage, item category, or item keywords. It uses parsers to acquire
+                            information about items: titles, categories, prices, etc. The service checks from time to
+                            time if a price has been reduced enough and if it did, the bot will send you a notification"
+                            technologies="The main language is Java 17. The app is built using SpringBoot 2. Parsing
+                            was implemented by using Selenium and Firefox browser.
+                            Main services are developed as separate microservices. They are connected through RabbitMQ
+                            and packaged in docker containers. As a database it uses Postgresql"
+                            ghLink={"https://github.com/s-rb/ecommerce-backend"}
                         />
                     </Col>
 

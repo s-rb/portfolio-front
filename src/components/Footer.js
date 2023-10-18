@@ -1,6 +1,7 @@
 import React from "react";
 import {Col, Container, Row} from "react-bootstrap";
 import {FaEnvelope, FaLinkedinIn} from "react-icons/fa";
+import {BsDownload} from "react-icons/bs";
 
 function Footer() {
     let date = new Date();
@@ -34,6 +35,17 @@ function Footer() {
                                 style={{color: "white"}}
                             >
                                 <FaEnvelope />
+                            </a>
+                        </li>
+
+                        <li className="social-icons" key={'s4'}>
+                            <a
+                                href="/cv/Roman_Surkov_Cv.pdf"
+                                download={"Roman_Surkov_Cv.pdf"}
+                                target="_blank"
+                                style={{color: "white", textDecoration: "none" }}
+                            >
+                                CV
                             </a>
                         </li>
                     </ul>

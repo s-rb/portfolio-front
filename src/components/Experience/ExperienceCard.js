@@ -1,6 +1,6 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
-import {ExperienceData, NotRelevantExperienceData} from "./ExperienceData";
+import {ExperienceData, NotRelevantExperienceData} from "../../ExperienceData";
 import {TimeLine} from "./TimeLine";
 
 function ExperienceCard() {

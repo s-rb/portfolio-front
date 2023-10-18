@@ -42,15 +42,20 @@ export const ExperienceData = [
         period: "10.2021 - now",
         company: Companies.It_one,
         position: "Senior software engineer",
-        description: "Developed and maintained banking software for one of the largest banks in the country. Among " +
-            "other projects, implemented electronic signature for clients, which involved multiple integrations with " +
-            "different systems. This allowed the bank to gain a competitive advantage and attract large dealers, " +
-            "resulting in a threefold increase in the number of applications and profits"
+        description: "I developed banking software for one of the largest banks in the country. This included " +
+            "implementing a digital signature project for clients, which attracted new partners and tripled the number " +
+            "of issued loans. I also redirected loan applications from another lending direction, which resulted in an " +
+            "additional flow of loan applications. I performed several technical improvements that significantly reduced " +
+            "production time, such as separating microservices from another team, increasing test coverage for existing " +
+            "code, and making many modifications for the successful implementation of a new accelerated CI/CD process " +
+            "and passing Quality Gates.\n" +
+            "I decomposed tasks, estimated labor costs jointly with the Product Owner, performed code reviews, " +
+            "supervised other developers, and planned and prepared software releases to production."
     }, {
         period: "09.2020 - 10.2021",
         company: Companies.Colvir,
         position: "Java developer",
-        description: "Took part in maintaining the company's main product, banking software, for various banks " +
+        description: "I took part in maintaining the company's main product, banking software, for various banks " +
             "worldwide. Modernized it by migrating logic from database procedures to Java microservices. Developed a " +
             "service for receiving multicast data from the stock exchange, in a multithreading mode from multiple " +
             "channels, with the exclusion of duplicate messages, control of omissions, and the implementation of other " +
@@ -62,22 +67,11 @@ export const ExperienceData = [
         description: "Developed the backend for a sports federation portal and an application for working with the " +
             "database of a government electoral system. Implemented full-text search (by vectors) in the PostgreSQL " +
             "database. Created an approximate search by multiple parameters using the similarity function based on " +
-            "trigrams in the database, with the ability to set arbitrary search accuracy. This simplified data entry by " +
-            "operators about users, user search, and error correction in a large amount of personal data. Additionally, " +
+            "trigrams in the database, with the ability to set arbitrary search accuracy. This simplified data entry " +
+            "by operators about users, user search, and error correction in a large amount of personal data. Additionally, " +
             "I developed a functionality for mass creation of data records about clients based on uploaded data in text " +
             "format, after passing quality control that was also done by me"
-    }, {
-        period: "07.2019 - 05.2020",
-        company: Companies.Skillbox,
-        position: "Student at course Java developer",
-        description: "During the learning period, I developed the backend for a blogging engine (RESTful SpringBoot web " +
-            "application) deployed on Heroku. Participated in a team project \"Social Network\" using SpringBoot (web, " +
-            "data jpa, security), Liquibase, Postgres, Jira, Git, Mapstruct, Lombok, Junit. Created other pet projects " +
-            "such as a JSoup/HtmlUnit parser-checker for a website with proxy servers in a multithreaded mode, with " +
-            "subsequent publication; a parser for VKontakte groups' data using the VK SDK API; a client for the Bittrex " +
-            "exchange; a REST web service using lightweight frameworks Javalin and Guice, MongoDB; and some simple games " +
-            "(desktop and Android, including using libGDX)"
-    },
+    }
 ];
 
 export const NotRelevantExperienceData = [
@@ -118,16 +112,16 @@ export const EngineeringExperienceData = [
         period: "07.2009 - 11.2019",
         company: `${Companies.Ey.name} / ${Companies.Nipi.name} / ${Companies.Rostelecom.name} / ${Companies.Sys.name} / ${Companies.Ets.name}`,
         position: "Chief project engineer / Lead design engineer / Contractor / Expert",
-        description: "As a design engineer/lead design engineer and contractor, I developed designs for 14 substations and " +
-            "35-220 kV transmission lines for the construction of the Vostochny Spaceport and the Nizhne-Bureyskaya HPP.\n" +
-            "As the chief project engineer, I created and led a design team (15 people) to develop engineering system " +
-            "design documentation for the Bureyskaya HPP and the Nizhne-Bureyskaya HPP. Completed over 20 different " +
-            "substation and engineering system projects.\n" +
-            "As part of an audit, I performed control, monitoring, and technical supervision over the construction " +
-            "of the Blagoveschenskaya TPP reconstruction project, analyzed payments for construction and equipment worth " +
+        description: "Monitored construction work and equipment delivery for the industrial infrastructure of the Amur " +
+            "Gas Processing Plant project as an expert.\n" +
+            "Performed control, monitoring, and technical supervision over the construction of the Blagoveschenskaya " +
+            "TPP reconstruction project as part of an audit. Analyzed payments for construction and equipment totaling " +
             "$100 million.\n" +
-            "As an expert, I monitored construction work and equipment delivery for the Amur Gas Processing Plant " +
-            "project's industrial infrastructure."
+            "Led a design team of 15 members as the chief project engineer to develop engineering system design " +
+            "documentation for the Bureyskaya HPP and the Nizhne-Bureyskaya HPP. Successfully completed over 20 " +
+            "different substation and engineering system projects.\n" +
+            "Developed designs for 14 substations and 35-220 kV transmission lines for the construction of the Vostochny " +
+            "Spaceport and the Nizhne-Bureyskaya HPP as a design engineer/lead designer and contractor."
     }
 ]
 
@@ -156,7 +150,7 @@ export const CoreCompetencies = [
     {name: 'Kafka'},
     {name: 'Kibana'},
     {name: 'Gradle'},
-    {name: 'QueryDsl'}
+    {name: 'JUnit/Mockito'}
 ];
 
 export const Certifications = [
@@ -164,6 +158,10 @@ export const Certifications = [
         company: "Specialist - Computer Training Center",
         date: "06.2023",
         name: "Refactoring as a systematic approach",
+    },{
+        company: "Udemy",
+        date: "10.2023",
+        name: "FullStack: Angular and Java SpringBoot E-Commerce Website",
     },{
         company: "IBS Training center",
         date: "05.2023",

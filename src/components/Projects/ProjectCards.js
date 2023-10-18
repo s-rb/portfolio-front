@@ -2,7 +2,7 @@ import React from "react";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import {CgWebsite} from "react-icons/cg";
-import {BsGithub, BsPaperclip} from "react-icons/bs";
+import {BsPaperclip} from "react-icons/bs";
 
 function ProjectCards(props) {
     return (
@@ -25,6 +25,18 @@ function ProjectCards(props) {
                 {"\n"}
                 {props.addButtonText &&
                 <Button variant="primary">{props.addButtonText}</Button>}
+                {"\n"}
+                {"\n"}
+                {props.backEnd &&
+                <Button variant="primary" href={props.backEnd} target="_blank">
+                    <BsPaperclip/> &nbsp;{"Backend"}
+                </Button>}
+                {"\n"}
+                {"\n"}
+                {props.frontEnd &&
+                <Button variant="primary" href={props.frontEnd} target="_blank">
+                    <BsPaperclip/> &nbsp;{"Frontend"}
+                </Button>}
             </Card.Body>
         </Card>
     );

@@ -3,7 +3,6 @@ import {AiFillGithub} from "react-icons/ai";
 import {SiBitbucket, SiLeetcode} from "react-icons/si";
 import React from "react";
 import cvStyle from "../CV/Cv.module.css";
-import {BsFiletypePdf} from "react-icons/bs";
 
 export const Social = (props) => {
     const iconsClassName = `${props.iconsStyle ? cvStyle[props.iconsStyle] : "icon-colour home-social-icons"}`;
@@ -71,7 +70,7 @@ export const Social = (props) => {
                     target="_blank"
                     className={iconsClassName}
                 >
-                    <BsFiletypePdf/>
+                    CV
                 </a>
             </li>}
         </ul>
