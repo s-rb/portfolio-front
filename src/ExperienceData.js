@@ -155,6 +155,10 @@ export const CoreCompetencies = [
 
 export const Certifications = [
     {
+        company: "Stepik",
+        date: "12.2023",
+        name: "Kubernetes for users",
+    },{
         company: "Specialist - Computer Training Center",
         date: "06.2023",
         name: "Refactoring as a systematic approach",
