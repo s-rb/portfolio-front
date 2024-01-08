@@ -6,7 +6,6 @@ import Home from "./components/Home/Home";
 import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
 import Stack from "./components/Stack/Stack";
-import Experience from "./components/Experience/Experience";
 
 import Footer from "./components/Footer";
 import {
@@ -62,7 +61,6 @@ function App() {
           <Route key={"ap02"} path="/projects" element={<Projects />} />
           <Route key={"ap03"} path="/cv" element={<CV key={'ap030'}/>} />
           <Route key={"ap04"} path="/about" element={<About />} />
-          <Route key={"ap05"} path="/experience" element={<Experience />} />
           <Route key={"ap06"} path="/stack" element={<Stack />} />
           <Route key={"ap07"} path="/contacts" element={<Contacts />} />
           <Route key={"ap08"} path="*" element={<Navigate to="/"/>} />
