@@ -29,14 +29,14 @@ function CV() {
     function getExperienceBlock(idx, data) {
         return <div key={idx}>
             <div className={styles.cvExperienceHeader}>
+                <div className={styles.cvPosition}>{data.position}</div>
+                <div className={styles.cvExperiencePeriod}>{data.period}</div>
+            </div>
+            <div className={styles.cvExperienceHeader}>
                 <div className={styles.cvCompany}>
                     {data.company !== null && typeof data.company === 'object' ? data.company.name : data.company}
                 </div>
                 <div className={styles.cvExperiencePeriodDiff}>{getDateDiffString(data.period.split(" - "))}</div>
-            </div>
-            <div className={styles.cvExperienceHeader}>
-                <div className={styles.cvPosition}>{data.position}</div>
-                <div className={styles.cvExperiencePeriod}>{data.period}</div>
             </div>
             {data.description.split("\n").map(o => <p className={styles.cvDescription}>{o}</p>)}
         </div>;

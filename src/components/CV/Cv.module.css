@@ -73,8 +73,8 @@ a.cvContactsIcons {
 .cvCompany {
     color: var(--text-color);
     text-align: left;
-    font-size: 1.6rem;
-    padding-top: 5px;
+    font-size: 1.2rem;
+    padding: 5px 0;
 }
 
 .cvCompanyMinor {
@@ -118,8 +118,8 @@ a.cvContactsIcons {
     color: var(--text-color);
     font-weight: bold;
     text-align: left;
-    font-size: 1.2rem;
-    padding: 5px 0;
+    font-size: 1.6rem;
+    padding-top: 5px;
 }
 
 .position {
@@ -146,6 +146,9 @@ a.cvContactsIcons {
         grid-template-columns: 1fr 1fr;
     }
     .cvCompany {
+        font-size: 1.1rem;
+    }
+    .cvPosition {
         font-size: 1.3rem;
     }
 }
