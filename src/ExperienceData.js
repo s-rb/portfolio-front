@@ -156,6 +156,11 @@ export const CoreCompetencies = [
 export const Certifications = [
     {
         company: "Stepik",
+        date: "01.2024",
+        name: "Ansible for beginners + hands-on experience",
+    },
+    {
+        company: "Stepik",
         date: "12.2023",
         name: "Kubernetes for users",
     },{
