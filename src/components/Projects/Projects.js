@@ -56,6 +56,24 @@ function Projects() {
 
                     <Col className="project-card">
                         <ProjectCard
+                            imgPath={BlogImg}
+                            isBlog={false}
+                            title="Blog backend application"
+                            description="This is a backend application for a blog engine. You can register and confirm
+                            your mail by email code, the registration form is protected by a captcha. You can do posts,
+                            write comments, and like posts. It uses Spring framework and MySql database.
+                            The code is covered with unit tests (Junit). This project was developed during the study
+                            at the Skillbox course"
+                            technologies="The main language is Java 11. The application was built with Apache Maven
+                            on SpringFramework. MySql as database. JUnit for testing code, Cage for captcha generation,
+                            and Jakarta Mail for emails"
+                            ghLink={"https://github.com/s-rb/blog-engine"}
+                            demoLink={"http://blog.surkoff.com"}
+                        />
+                    </Col>
+
+                    <Col className="project-card">
+                        <ProjectCard
                             imgPath={QuizImg}
                             isBlog={false}
                             title="Quiz"
@@ -103,23 +121,6 @@ function Projects() {
                             telegram bot, and com.theokanning.openai-gpt3-java for OpenAI integration. This is a
                             lightweight application with minimal technologies and dependencies"
                             ghLink={"https://github.com/s-rb/chatgpt-bot"}
-                        />
-                    </Col>
-
-                    <Col className="project-card">
-                        <ProjectCard
-                            imgPath={BlogImg}
-                            isBlog={false}
-                            title="Blog backend application"
-                            description="This is a backend application for a blog engine. You can register and confirm
-                            your mail by email code, the registration form is protected by a captcha. You can do posts,
-                            write comments, and like posts. It uses Spring framework and MySql database.
-                            The code is covered with unit tests (Junit). This project was developed during the study
-                            at the Skillbox course"
-                            technologies="The main language is Java 11. The application was built with Apache Maven
-                            on SpringFramework. MySql as database. JUnit for testing code, Cage for captcha generation,
-                            and Jakarta Mail for emails"
-                            ghLink={"https://github.com/s-rb/blog-engine"}
                         />
                     </Col>
 
