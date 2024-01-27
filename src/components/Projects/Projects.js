@@ -15,6 +15,8 @@ import PriceWatchFront from "../../Assets/Projects/PriceWatchFront.png"
 import JapanCafeImg from "../../Assets/Projects/JapanCafe.png"
 import PortfolioImg from "../../Assets/Projects/Portfolio.png"
 import ChatGptTgBotImg from "../../Assets/Projects/ChatGptTgBot.png"
+import TaskListImg from "../../Assets/Projects/Tasklist_screen.png"
+import NettyChatImg from "../../Assets/Projects/NettyChat.png"
 
 // todo Сделать всплывающее описание по нажатию или наведению
 function Projects() {
@@ -49,7 +51,7 @@ function Projects() {
                             title="Japan cafe"
                             description="React application for the Japan cafe website made for study ReactJS purpose"
                             technologies="Javascript language, ReactJS library. Html, CSS"
-                            ghLink={"https://bitbucket.org/surkovr/japan-cafe/src/master/"}
+                            ghLink={"https://github.com/s-rb/japan-cafe"}
                             demoLink={"http://japan-cafe.surkoff.com"}
                         />
                     </Col>
@@ -85,7 +87,7 @@ function Projects() {
                             technologies="The main language of the application is JavaScript. It uses the ReactJS library.
                             The project was bootstrapped with create-react-app"
                             demoLink="http://quiz.surkoff.com"
-                            ghLink={"https://bitbucket.org/surkovr/react-quiz-app/src/master/"}
+                            ghLink={"https://github.com/s-rb/react-quiz-app"}
                         />
                     </Col>
 
@@ -103,7 +105,7 @@ function Projects() {
                             was implemented by using Selenium and Firefox browser.
                             Main services are developed as separate microservices. They are connected through RabbitMQ
                             and packaged in docker containers. As a database it uses Postgresql"
-                            ghLink={"https://github.com/s-rb/ecommerce-backend"}
+                            ghLink={"https://github.com/s-rb/PriceWatcherBot"}
                         />
                     </Col>
 
@@ -159,7 +161,7 @@ function Projects() {
                             description="React application for managing costs. You can add costs with dates and the application
                             calculates results and shows you the diagrams"
                             technologies="Javascript language, ReactJS library, Html, Css"
-                            ghLink={"https://bitbucket.org/surkovr/react-costs-log-app/src/master/"}
+                            ghLink={"https://github.com/s-rb/react-costs-log-app"}
                             demoLink={"http://costs-log.surkoff.com/"}
                         />
                     </Col>
@@ -202,6 +204,30 @@ function Projects() {
                             It's created on GeekBrains intensive"
                             technologies="The app's main language is Java 11"
                             ghLink={"https://github.com/s-rb/simple-java-game-catch-the-drop"}
+                        />
+                    </Col>
+
+
+                    <Col className="project-card">
+                        <ProjectCard
+                            imgPath={TaskListImg}
+                            isBlog={false}
+                            title="Task list"
+                            description="Very basic React application to manage tasks. You can add tasks, they appear in the task list. You can remove them from the task list"
+                            technologies="Javascript language, ReactJS library, Html, Css"
+                            ghLink={"https://github.com/s-rb/styling-components-app"}
+                            demoLink={"http://tasklist.surkoff.com/"}
+                        />
+                    </Col>
+
+                    <Col className="project-card">
+                        <ProjectCard
+                            imgPath={NettyChatImg}
+                            isBlog={false}
+                            title="Netty chat"
+                            description="Simple Netty Chat client and server app. You can run server and a lot of clients. They send messages to the server and server sends messages to all connected clients"
+                            technologies="Java 17 FX, Netty framework, Log4j"
+                            ghLink={"https://github.com/s-rb/SimpleNettyChat"}
                         />
                     </Col>
 
