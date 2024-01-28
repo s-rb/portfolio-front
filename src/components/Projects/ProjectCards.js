@@ -7,9 +7,9 @@ import {BsPaperclip} from "react-icons/bs";
 function ProjectCards(props) {
     return (
         <Card className="project-card-view">
+            <Card.Header><Card.Title style={{paddingTop: "1em"}}>{props.title}</Card.Title></Card.Header>
             <Card.Img variant="top" src={props.imgPath} alt="card-img"/>
             <Card.Body>
-                <Card.Title>{props.title}</Card.Title>
                 <p style={{textAlign: "justify"}} className="project-description">{props.description}</p>
                 {props.ghLink &&
                 <Button variant="primary" href={props.ghLink} target="_blank">

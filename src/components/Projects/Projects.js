@@ -34,7 +34,6 @@ function Projects() {
                     <Col className="project-card">
                         <ProjectCard
                             imgPath={EcommerceImg}
-                            isBlog={false}
                             title="Ecommerce Full Stack Application"
                             description="Ecommerce Full Stack Springboot/Angular Application, integration with Payment processor via API"
                             technologies="The backend main language is Java 17 and the app is built using SpringBoot 2.
@@ -47,7 +46,6 @@ function Projects() {
                     <Col className="project-card">
                         <ProjectCard
                             imgPath={JapanCafeImg}
-                            isBlog={false}
                             title="Japan cafe"
                             description="React application for the Japan cafe website made for study ReactJS purpose"
                             technologies="Javascript language, ReactJS library. Html, CSS"
@@ -59,7 +57,6 @@ function Projects() {
                     <Col className="project-card">
                         <ProjectCard
                             imgPath={BlogImg}
-                            isBlog={false}
                             title="Blog backend application"
                             description="This is a backend application for a blog engine. You can register and confirm
                             your mail by email code, the registration form is protected by a captcha. You can do posts,
@@ -77,7 +74,6 @@ function Projects() {
                     <Col className="project-card">
                         <ProjectCard
                             imgPath={QuizImg}
-                            isBlog={false}
                             title="Quiz"
                             description="Quiz is a simple frontend ReactJS application where you can answer some
                             questions. The application calculates right and wrong answers and after the quiz is finished,
@@ -94,7 +90,6 @@ function Projects() {
                     <Col className="project-card">
                         <ProjectCard
                             imgPath={Skidka4uBotImg}
-                            isBlog={false}
                             title="Skidka4uBot"
                             description="Skidka4uBot is a web service and a telegram bot as its client that allows the
                             user to track real sales of popular online shops. Also, it allows the user to subscribe to
@@ -112,7 +107,6 @@ function Projects() {
                     <Col className="project-card">
                         <ProjectCard
                             imgPath={ChatGptTgBotImg}
-                            isBlog={false}
                             title="ChatGpt telegram bot"
                             description="A Telegram bot for sending requests to ChatGpt from OpenAI. Unlimited access
                             for the administrator. Ability for the administrator to approve access for third-party users.
@@ -129,7 +123,6 @@ function Projects() {
                     <Col className="project-card">
                         <ProjectCard
                             imgPath={PriceWatchFront}
-                            isBlog={false}
                             title="Skidki4u Frontend"
                             description="React application for price-watching backend application. It is another client
                             for the backend. The first and primary is the telegram bot Skidka4uBot
@@ -143,7 +136,6 @@ function Projects() {
                     <Col className="project-card">
                         <ProjectCard
                             imgPath={PortfolioImg}
-                            isBlog={false}
                             title="Portfolio website"
                             description="This is my portfolio website. In fact, you are visiting it right now.
                             It is built with Javascript and ReactJs library"
@@ -156,7 +148,6 @@ function Projects() {
                     <Col className="project-card">
                         <ProjectCard
                             imgPath={CostsLogImg}
-                            isBlog={false}
                             title="Costs log"
                             description="React application for managing costs. You can add costs with dates and the application
                             calculates results and shows you the diagrams"
@@ -169,7 +160,6 @@ function Projects() {
                     <Col className="project-card">
                         <ProjectCard
                             imgPath={InteractivePoster}
-                            isBlog={false}
                             title="Interactive poster"
                             description="This is an interactive poster for Valentine's Day. It's built with Java and
                             LibGdx library. The application is created on GeekBrains intensive"
@@ -181,7 +171,6 @@ function Projects() {
                     <Col className="project-card">
                         <ProjectCard
                             imgPath={HashGen}
-                            isBlog={false}
                             title="GUI HashGenerator desktop app"
                             description="This is a desktop application for the generation of hash codes for the
                             subdirectories depending on files, contained in those directories.
@@ -198,7 +187,6 @@ function Projects() {
                     <Col className="project-card">
                         <ProjectCard
                             imgPath={CatchTheDrop}
-                            isBlog={false}
                             title="Catch the drop"
                             description="Java game Catch the drop. The application is built with Java and Swing.
                             It's created on GeekBrains intensive"
@@ -211,7 +199,6 @@ function Projects() {
                     <Col className="project-card">
                         <ProjectCard
                             imgPath={TaskListImg}
-                            isBlog={false}
                             title="Task list"
                             description="Very basic React application to manage tasks. You can add tasks, they appear in the task list. You can remove them from the task list"
                             technologies="Javascript language, ReactJS library, Html, Css"
@@ -223,7 +210,6 @@ function Projects() {
                     <Col className="project-card">
                         <ProjectCard
                             imgPath={NettyChatImg}
-                            isBlog={false}
                             title="Netty chat"
                             description="Simple Netty Chat client and server app. You can run server and a lot of clients. They send messages to the server and server sends messages to all connected clients"
                             technologies="Java 17 FX, Netty framework, Log4j"
@@ -234,7 +220,6 @@ function Projects() {
                     <Col className="project-card">
                         <ProjectCard
                             imgPath={AndroidAgarImg}
-                            isBlog={false}
                             title="Android game like Agar.io"
                             description="Simple Android game like agar.io. It uses java and gradle"
                             technologies="Main language is Java 11. It is built with gradle"
