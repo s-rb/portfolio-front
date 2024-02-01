@@ -1,8 +1,7 @@
 import React from "react";
 import {Col, Container, Row} from "react-bootstrap";
 import {FaEnvelope, FaLinkedinIn} from "react-icons/fa";
-import {BsDownload} from "react-icons/bs";
-
+// todo сделать через медиасайз
 function Footer() {
     let date = new Date();
     let year = date.getFullYear();

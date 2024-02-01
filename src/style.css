@@ -13,6 +13,7 @@ html {
 
     --imp-text-color: #4169e1;
     --main-color: #4169e1;
+    --dark-main-color: #2f4aa3;
     --text-color: white;
 }
 
@@ -808,6 +809,37 @@ button:focus {
     background-image: var(--section-background-color) !important;
 }
 
+.page-item:not(.active) > .page-link {
+    background-color: var(--main-color) !important;
+    color: var(--text-color) !important;
+    border-color: var(--main-color) !important;
+}
+
+.page-link:hover, .page-item:not(.active) > .page-link:hover {
+    color: var(--text-color) !important;
+    background-color: var(--dark-main-color) !important;
+    border-color: var(--dark-main-color) !important;
+    transform: scale(1.02) !important;
+    overflow: hidden !important;
+    cursor: pointer;
+}
+
+.bloglist-card {
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+    height: auto !important;
+}
+
+.bloglist-item-more-button.btn-primary:hover {
+    color: var(--text-color) !important;
+    background-color: var(--dark-main-color) !important;
+    border-color: var(--dark-main-color) !important;
+    transform: scale(1.02) !important;
+    overflow: hidden !important;
+}
+
 .project-card {
     padding-top: 50px !important;
     padding-bottom: 50px !important;
@@ -826,6 +858,21 @@ button:focus {
 }
 
 .project-card-view:hover {
+    transform: scale(1.02) !important;
+    overflow: hidden !important;
+    box-shadow: 0 4px 4px 5px var(--main-color) !important;
+}
+
+.bloglist-item-card-view {
+    box-shadow: 0 4px 5px 3px var(--main-color) !important;
+    color: white !important;
+    background-color: transparent !important;
+    opacity: 0.9 !important;
+    transition: all 0.5s ease 0s !important;
+    height: 100% !important;
+}
+
+.bloglist-item-card-view:hover {
     transform: scale(1.02) !important;
     overflow: hidden !important;
     box-shadow: 0 4px 4px 5px var(--main-color) !important;

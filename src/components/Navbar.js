@@ -11,7 +11,8 @@ import {
 import {
     ImStack
 } from "react-icons/im";
-import {GiSkills, GiNotebook} from "react-icons/gi";
+import {GiNotebook} from "react-icons/gi";
+import {BsFileEarmark} from "react-icons/bs";
 
 function NavBar() {
     const [expand, updateExpanded] = useState(false);
@@ -68,6 +69,16 @@ function NavBar() {
                     <Nav.Item>
                         <Nav.Link
                             as={Link}
+                            to="/blog"
+                            onClick={() => updateExpanded(false)}
+                        >
+                            <GiNotebook style={{marginBottom: "2px"}}/> Blog
+                        </Nav.Link>
+                    </Nav.Item>
+
+                    <Nav.Item>
+                        <Nav.Link
+                            as={Link}
                             to="/stack"
                             onClick={() => updateExpanded(false)}
                         >
@@ -93,7 +104,7 @@ function NavBar() {
                             to="/cv"
                             onClick={() => updateExpanded(false)}
                         >
-                            <GiNotebook
+                            <BsFileEarmark
                                 style={{marginBottom: "2px"}}
                             /> CV
                         </Nav.Link>
