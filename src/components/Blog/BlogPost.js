@@ -12,7 +12,7 @@ function BlogPost() {
     useEffect(() => {
         const fetchPost = async () => {
             try {
-                const response = await axios.get(`http://blog.surkoff.com/api/post/${postId}`);
+                const response = await axios.get(`https://blog.surkoff.com/api/post/${postId}`);
                 console.log(response);
                 setPost(response.data);
             } catch (error) {

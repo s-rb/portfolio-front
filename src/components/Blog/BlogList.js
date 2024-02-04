@@ -21,7 +21,7 @@ function BlogList() {
 
   useEffect(() => {
     const fetchPosts = async () => {
-      let url = `http://blog.surkoff.com/api/post?offset=${(currentPage - 1) * postsPerPage}&limit=${postsPerPage}&mode=recent`;
+      let url = `https://blog.surkoff.com/api/post?offset=${(currentPage - 1) * postsPerPage}&limit=${postsPerPage}&mode=recent`;
       const response = await axios.get(url);
       setPosts(response.data.posts);
       setTotalPostsCount(response.data.count); // Set the total posts count
