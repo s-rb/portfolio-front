@@ -30,7 +30,25 @@ function Projects() {
                 <p style={{color: "white"}}>
                     Here you can see some of my <strong className="blue">side</strong> projects
                 </p>
+
                 <Row lg={3} sm={1} md={2} xs={1} style={{justifyContent: "center", paddingBottom: "10px"}}>
+                    <Col className="project-card">
+                        <ProjectCard
+                            imgPath={BlogImg}
+                            title="Blog backend application"
+                            description="This is a backend application for a blog engine. You can register and confirm
+                            your mail by email code, the registration form is protected by a captcha. You can do posts,
+                            write comments, and like posts. It uses Spring framework and MySql database.
+                            The code is covered with unit tests (Junit). This project was developed during the study
+                            at the Skillbox course"
+                            technologies="The main language is Java 11. The application was built with Apache Maven
+                            on SpringFramework. MySql as database. JUnit for testing code, Cage for captcha generation,
+                            and Jakarta Mail for emails"
+                            ghLink={"https://github.com/s-rb/blog-engine"}
+                            demoLink={"http://blog.surkoff.com"}
+                        />
+                    </Col>
+
                     <Col className="project-card">
                         <ProjectCard
                             imgPath={EcommerceImg}
@@ -51,23 +69,6 @@ function Projects() {
                             technologies="Javascript language, ReactJS library. Html, CSS"
                             ghLink={"https://github.com/s-rb/japan-cafe"}
                             demoLink={"http://japan-cafe.surkoff.com"}
-                        />
-                    </Col>
-
-                    <Col className="project-card">
-                        <ProjectCard
-                            imgPath={BlogImg}
-                            title="Blog backend application"
-                            description="This is a backend application for a blog engine. You can register and confirm
-                            your mail by email code, the registration form is protected by a captcha. You can do posts,
-                            write comments, and like posts. It uses Spring framework and MySql database.
-                            The code is covered with unit tests (Junit). This project was developed during the study
-                            at the Skillbox course"
-                            technologies="The main language is Java 11. The application was built with Apache Maven
-                            on SpringFramework. MySql as database. JUnit for testing code, Cage for captcha generation,
-                            and Jakarta Mail for emails"
-                            ghLink={"https://github.com/s-rb/blog-engine"}
-                            demoLink={"http://blog.surkoff.com"}
                         />
                     </Col>
 
