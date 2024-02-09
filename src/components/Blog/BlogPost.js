@@ -41,6 +41,7 @@ function BlogPost() {
                                     <div className="blockquote mb-0 p-3" style={{textAlign: "justify"}}>
                                         <div style={{ fontSize: "1.05rem"}} dangerouslySetInnerHTML={{ __html: post.text }}></div>
                                         <div className="blogpost-stats" style={{marginTop: 20, textAlign: "right", fontSize: "1rem"}}>
+                                            <div>Views: {post.viewCount}</div>
                                             <div>Likes: {post.likeCount}</div>
                                         </div>
                                     </div>

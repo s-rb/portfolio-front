@@ -4,7 +4,7 @@ export const Summary = <>
     <p>Experienced and results-oriented Java developer with a proven track record of delivering
         high-quality software solutions. Proficient in key frameworks and technologies such as
         Spring/SpringBoot, Maven, Gradle, Git, SQL databases, Docker, JUnit, Mockito, REST/SOAP,
-        and more. With over 4 years of experience in developing and implementing complex projects across
+        and more. With over 5 years of experience in developing and implementing complex projects across
         various industries, including banking software and government portals.
     </p>
     <p>Throughout my career, I have demonstrated a passion for software development and a commitment to
