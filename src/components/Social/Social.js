@@ -1,6 +1,6 @@
 import {FaEnvelope, FaLinkedinIn} from "react-icons/fa";
 import {AiFillGithub} from "react-icons/ai";
-import {SiBitbucket, SiLeetcode} from "react-icons/si";
+import {SiLeetcode} from "react-icons/si";
 import React from "react";
 import cvStyle from "../CV/Cv.module.css";
 
@@ -50,17 +50,6 @@ export const Social = (props) => {
                     key={'as22'}
                 >
                     <SiLeetcode/>
-                </a>
-            </li>
-            <li className="social-icons" key={'s3'}>
-                <a
-                    href="https://bitbucket.org/surkovr/"
-                    target="_blank"
-                    rel="noreferrer"
-                    className={iconsClassName}
-                    key={'as3'}
-                >
-                    <SiBitbucket/>
                 </a>
             </li>
             {props.iconsStyle && <li className="social-icons" key={'s4'}>

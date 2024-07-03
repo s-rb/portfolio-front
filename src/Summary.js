@@ -1,11 +1,9 @@
 import React from "react";
 
 export const Summary = <>
-    <p>Experienced and results-oriented Java developer with a proven track record of delivering
-        high-quality software solutions. Proficient in key frameworks and technologies such as
-        Spring/SpringBoot, Maven, Gradle, Git, SQL databases, Docker, JUnit, Mockito, REST/SOAP,
-        and more. With over 5 years of experience in developing and implementing complex projects across
-        various industries, including banking software and government portals.
+    <p>Experienced and results-oriented Java Developer with a proven track record of developing high-quality software
+        solutions. Worked with major modern frameworks and technologies. Over 5 years of experience in developing and
+        implementing complex projects across various industries, including the Fintech sector.
     </p>
     <p>Throughout my career, I have demonstrated a passion for software development and a commitment to
         continuous learning and growth. I have successfully collaborated with cross-functional teams to
@@ -22,7 +20,5 @@ export const Summary = <>
         delivering exceptional results, I am dedicated to surpassing customer expectations and
         driving business success.
     </p>
-    <p>Overall, I am seeking a new opportunity where I can leverage my expertise to contribute to the
-        success of a forward-thinking organization.
-    </p>
+    <p>I am seeking a new opportunity where I can leverage my experience to contribute to the success of a promising company.</p>
 </>;
