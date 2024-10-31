@@ -45,7 +45,7 @@ function Projects() {
                             on SpringFramework. MySql as database. JUnit for testing code, Cage for captcha generation,
                             and Jakarta Mail for emails"
                             ghLink={"https://github.com/s-rb/blog-engine"}
-                            demoLink={"http://blog.surkoff.com"}
+                            demoLink={"http://blog.surkoff.su"}
                         />
                     </Col>
 
@@ -68,7 +68,7 @@ function Projects() {
                             description="React application for the Japan cafe website made for study ReactJS purpose"
                             technologies="Javascript language, ReactJS library. Html, CSS"
                             ghLink={"https://github.com/s-rb/japan-cafe"}
-                            demoLink={"http://japan-cafe.surkoff.com"}
+                            demoLink={"http://japan-cafe.surkoff.su"}
                         />
                     </Col>
 
@@ -83,7 +83,7 @@ function Projects() {
                             The application was created for educational purposes to study ReactJS"
                             technologies="The main language of the application is JavaScript. It uses the ReactJS library.
                             The project was bootstrapped with create-react-app"
-                            demoLink="http://quiz.surkoff.com"
+                            demoLink="http://quiz.surkoff.su"
                             ghLink={"https://github.com/s-rb/react-quiz-app"}
                         />
                     </Col>
@@ -142,7 +142,7 @@ function Projects() {
                             It is built with Javascript and ReactJs library"
                             technologies="Javascript, ReactJS library, Html, Css"
                             ghLink={"https://github.com/s-rb/portfolio-front"}
-                            demoLink={"https://surkoff.com"}
+                            demoLink={"https://surkoff.su"}
                         />
                     </Col>
 
@@ -154,7 +154,7 @@ function Projects() {
                             calculates results and shows you the diagrams"
                             technologies="Javascript language, ReactJS library, Html, Css"
                             ghLink={"https://github.com/s-rb/react-costs-log-app"}
-                            demoLink={"http://costs-log.surkoff.com/"}
+                            demoLink={"http://costs-log.surkoff.su/"}
                         />
                     </Col>
 
@@ -204,7 +204,7 @@ function Projects() {
                             description="Very basic React application to manage tasks. You can add tasks, they appear in the task list. You can remove them from the task list"
                             technologies="Javascript language, ReactJS library, Html, Css"
                             ghLink={"https://github.com/s-rb/styling-components-app"}
-                            demoLink={"http://tasklist.surkoff.com/"}
+                            demoLink={"http://tasklist.surkoff.su/"}
                         />
                     </Col>
 
