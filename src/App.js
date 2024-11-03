@@ -22,23 +22,23 @@ import BlogList from "./components/Blog/BlogList";
 import BlogPost from "./components/Blog/BlogPost";
 
 // Disable logs
-(function () {
-  let method;
-  let noop = function noop() { };
-  let methods = [
-    'assert', 'clear', 'count', 'debug', 'dir', 'dirxml', 'error',
-    'exception', 'group', 'groupCollapsed', 'groupEnd', 'info', 'log',
-    'markTimeline', 'profile', 'profileEnd', 'table', 'time', 'timeEnd',
-    'timeStamp', 'trace', 'warn'
-  ];
-  let length = methods.length;
-  let console = (window.console = window.console || {});
-
-  while (length--) {
-    method = methods[length];
-    console[method] = noop;
-  }
-}());
+// (function () {
+//   let method;
+//   let noop = function noop() { };
+//   let methods = [
+//     'assert', 'clear', 'count', 'debug', 'dir', 'dirxml', 'error',
+//     'exception', 'group', 'groupCollapsed', 'groupEnd', 'info', 'log',
+//     'markTimeline', 'profile', 'profileEnd', 'table', 'time', 'timeEnd',
+//     'timeStamp', 'trace', 'warn'
+//   ];
+//   let length = methods.length;
+//   let console = (window.console = window.console || {});
+//
+//   while (length--) {
+//     method = methods[length];
+//     console[method] = noop;
+//   }
+// }());
 
 function App() {
   const [load, upadateLoad] = useState(true);

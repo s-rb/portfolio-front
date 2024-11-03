@@ -58,6 +58,7 @@ export const Social = (props) => {
                     download={"Roman_Surkov_Cv.pdf"}
                     target="_blank"
                     className={iconsClassName}
+                    key={'as42'}
                     style={{textDecoration: "none" }}
                 >
                     CV

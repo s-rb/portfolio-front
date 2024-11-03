@@ -1,6 +1,6 @@
 {
-  "short_name": "Roman Surkov's Portfolio",
-  "name": "Roman Surkov's Portfolio",
+  "short_name": "Roman Surkov Portfolio",
+  "name": "Roman Surkov Portfolio",
   "icons": [
     {
       "src": "./favicon.ico",
@@ -8,7 +8,7 @@
       "type": "image/x-icon"
     }
   ],
-  "start_url": ".",
+  "start_url": "/",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff"
