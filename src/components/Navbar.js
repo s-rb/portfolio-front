@@ -69,7 +69,7 @@ function NavBar() {
                     <Nav.Item>
                         <Nav.Link
                             as={Link}
-                            to="/blog"
+                            to="https://surkoff.com/blog"
                             onClick={() => updateExpanded(false)}
                         >
                             <GiNotebook style={{marginBottom: "2px"}}/> Blog

@@ -18,8 +18,6 @@ import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Contacts from "./components/Contacts/Contacts";
-import BlogList from "./components/Blog/BlogList";
-import BlogPost from "./components/Blog/BlogPost";
 
 // Disable logs
 (function () {
@@ -64,8 +62,7 @@ function App() {
           <Route key={"ap04"} path="/about" element={<About />} />
           <Route key={"ap06"} path="/stack" element={<Stack />} />
           <Route key={"ap07"} path="/contacts" element={<Contacts />} />
-          <Route key={"ap09"} path="/blog" element={<BlogList />} />
-          <Route key={"ap10"} path="/blog/:postId" element={<BlogPost key={'ap100'} />} />
+          <Route key={"ap09"} path="https://surkoff.com/blog" />
           <Route key={"ap08"} path="*" element={<Navigate to="/"/>} />
         </Routes>
         <Footer />
