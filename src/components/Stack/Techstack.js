@@ -1,97 +1,90 @@
 import React from "react";
 import {Col, Row} from "react-bootstrap";
-import {
-    SiApachekafka,
-    SiApachemaven,
-    SiBitbucket,
-    SiConfluence,
-    SiCsharp,
-    SiCss3,
-    SiDocker,
-    SiElastic,
-    SiGit,
-    SiGradle,
-    SiHtml5,
-    SiIntellijidea,
-    SiJavascript,
-    SiJenkins,
-    SiJunit5,
-    SiKibana,
-    SiMysql,
-    SiNodedotjs,
-    SiOracle,
-    SiPostgresql,
-    SiJira,
-    SiPostman,
-    SiProbot,
-    SiRabbitmq,
-    SiReact,
-    SiSlack,
-    SiSpring,
-    SiSpringboot,
-    SiTalend,
-    SiTeamcity,
-    SiTelegram,
-    SiTypescript,
-    SiUbuntu,
-    SiUnity,
-    SiWebstorm
-} from "react-icons/si";
-import {TbApi, TbDatabase} from "react-icons/tb";
-import {MdSchema} from "react-icons/md";
-import {FaJava} from "react-icons/fa";
 import Container from "react-bootstrap/Container";
+import defaultTechStack from "../../data/techStack";
+
+const isSVG = (icon) => {
+    return icon && icon.endsWith('.svg');
+};
+
+const InlineSVG = ({ src }) => {
+    const [svgContent, setSvgContent] = React.useState('');
+
+    React.useEffect(() => {
+        const fetchSVG = async () => {
+            try {
+                const response = await fetch(src);
+                if (response.ok) {
+                    const text = await response.text();
+                    setSvgContent(text);
+                } else {
+                    console.error('Failed to fetch SVG:', response.statusText);
+                }
+            } catch (error) {
+                console.error('Error fetching SVG:', error);
+            }
+        };
+
+        fetchSVG();
+    }, [src]);
+
+    return (
+        <div
+            className="tech-icon-svg"
+            dangerouslySetInnerHTML={{ __html: svgContent }}
+        />
+    );
+};
 
 function Techstack() {
+    let techStack  = defaultTechStack; // Данные по умолчанию
+    // // Проверяем, существует ли файл с загруженными данными
+    try {
+        techStack = require("../../data/fetchedTechStack.json");
+    } catch (error) {
+        console.log("Using default local data");
+    }
+
     return (
         <Container>
             <h1 className="project-heading">Primary <strong className="blue">Stack</strong></h1>
-            <Row style={{justifyContent: "center", paddingBottom: "50px"}}>
-                <Col xs={4} md={2} className="tech-icons"><FaJava/><p className="tech-icon-text">Java</p></Col>
-                <Col xs={4} md={2} className="tech-icons"><SiSpring/><p className="tech-icon-text">Spring</p></Col>
-                <Col xs={4} md={2} className="tech-icons"><SiSpringboot/><p className="tech-icon-text">SpringBoot</p></Col>
-                <Col xs={4} md={2} className="tech-icons"><TbDatabase/><p className="tech-icon-text">Databases</p></Col>
-                <Col xs={4} md={2} className="tech-icons"><SiPostgresql/><p className="tech-icon-text">Postgresql</p></Col>
-                <Col xs={4} md={2} className="tech-icons"><SiMysql/><p className="tech-icon-text">Mysql</p></Col>
-                <Col xs={4} md={2} className="tech-icons"><SiGradle/><p className="tech-icon-text">Gradle</p></Col>
-                <Col xs={4} md={2} className="tech-icons"><SiApachemaven/><p className="tech-icon-text">Maven</p></Col>
-                <Col xs={4} md={2} className="tech-icons"><SiApachekafka/><p className="tech-icon-text">Apache Kafka</p></Col>
-                <Col xs={4} md={2} className="tech-icons"><SiIntellijidea/><p className="tech-icon-text">Intellij Idea</p></Col>
-                <Col xs={4} md={2} className="tech-icons"><SiGit/><p className="tech-icon-text">Git</p></Col>
-                <Col xs={4} md={2} className="tech-icons"><SiJunit5/><p className="tech-icon-text">JUnit</p></Col>
-                <Col xs={4} md={2} className="tech-icons"><SiDocker/><p className="tech-icon-text">Docker</p></Col>
-                <Col xs={4} md={2} className="tech-icons"><TbApi/><p className="tech-icon-text">REST API</p></Col>
-                <Col xs={4} md={2} className="tech-icons"><SiPostman/><p className="tech-icon-text">Postman</p></Col>
-                <Col xs={4} md={2} className="tech-icons"><SiTalend/><p className="tech-icon-text">Talend</p></Col>
-                <Col xs={4} md={2} className="tech-icons"><MdSchema/><p className="tech-icon-text">Camunda BPM</p></Col>
+            <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
+                {techStack && techStack.primary && techStack.primary.length > 0
+                    && techStack.primary.map((o, idx) =>
+                            o?.title && o?.icon
+                            && <Col key={idx} xs={4} md={2} className="tech-icons">
+                                {isSVG(o.icon)
+                                    ? <InlineSVG src={`/Assets/images/icons/${o.icon}`} />
+                                    : <img alt={`${o.title}-icon`} src={`/Assets/images/icons/${o.icon}`} style={{ width: '1em', height: '1em' }} />}
+                                <p className="tech-icon-text">{o.title}</p>
+                            </Col>
+                    )}
             </Row>
             <h1 className="project-heading">Secondary <strong className="blue">Stack</strong></h1>
-            <Row style={{justifyContent: "center", paddingBottom: "50px"}}>
-                <Col xs={4} md={2} className="tech-icons"><SiConfluence/><p className="tech-icon-text">Confluence</p></Col>
-                <Col xs={4} md={2} className="tech-icons"><SiTeamcity/><p className="tech-icon-text">Teamcity</p></Col>
-                <Col xs={4} md={2} className="tech-icons"><SiKibana/><p className="tech-icon-text">Kibana</p></Col>
-                <Col xs={4} md={2} className="tech-icons"><SiJira/><p className="tech-icon-text">Jira</p></Col>
-                <Col xs={4} md={2} className="tech-icons"><SiBitbucket/><p className="tech-icon-text">Bitbucket</p></Col>
-                <Col xs={4} md={2} className="tech-icons"><SiElastic/><p className="tech-icon-text">Elastic</p></Col>
-                <Col xs={4} md={2} className="tech-icons"><SiSlack/><p className="tech-icon-text">Slack</p></Col>
-                <Col xs={4} md={2} className="tech-icons"><SiJenkins/><p className="tech-icon-text">Jenkins</p></Col>
-                <Col xs={4} md={2} className="tech-icons"><SiOracle/><p className="tech-icon-text">OracleDB</p></Col>
+            <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
+            {techStack && techStack.secondary && techStack.secondary.length > 0
+                && techStack.secondary.map((o, idx) =>
+                        o?.title && o?.icon
+                        && <Col key={idx} xs={4} md={2} className="tech-icons">
+                            {isSVG(o.icon)
+                                ? <InlineSVG src={`/Assets/images/icons/${o.icon}`} />
+                                : <img alt={`${o.title}-icon`} src={`/Assets/images/icons/${o.icon}`} style={{ width: '1em', height: '1em' }} />}
+                            <p className="tech-icon-text">{o.title}</p>
+                        </Col>
+                )}
             </Row>
             <h1 className="project-heading">Hobby <strong className="blue">Stack</strong></h1>
-            <Row style={{justifyContent: "center", paddingBottom: "50px"}}>
-                <Col xs={4} md={2} className="tech-icons"><SiRabbitmq/><p className="tech-icon-text">RabbitMQ</p></Col>
-                <Col xs={4} md={2} className="tech-icons"><SiTelegram/><p className="tech-icon-text">Telegram API</p></Col>
-                <Col xs={4} md={2} className="tech-icons"><SiProbot/><p className="tech-icon-text">Bots</p></Col>
-                <Col xs={4} md={2} className="tech-icons"><SiUbuntu/><p className="tech-icon-text">Ubuntu</p></Col>
-                <Col xs={4} md={2} className="tech-icons"><SiJavascript/><p className="tech-icon-text">Javascript</p></Col>
-                <Col xs={4} md={2} className="tech-icons"><SiTypescript/><p className="tech-icon-text">Typescript</p></Col>
-                <Col xs={4} md={2} className="tech-icons"><SiReact/><p className="tech-icon-text">ReactJS</p></Col>
-                <Col xs={4} md={2} className="tech-icons"><SiWebstorm/><p className="tech-icon-text">Webstorm</p></Col>
-                <Col xs={4} md={2} className="tech-icons"><SiNodedotjs/><p className="tech-icon-text">NodeJS</p></Col>
-                <Col xs={4} md={2} className="tech-icons"><SiHtml5/><p className="tech-icon-text">HTML</p></Col>
-                <Col xs={4} md={2} className="tech-icons"><SiCss3/><p className="tech-icon-text">CSS</p></Col>
-                <Col xs={4} md={2} className="tech-icons"><SiCsharp/><p className="tech-icon-text">C#</p></Col>
-                <Col xs={4} md={2} className="tech-icons"><SiUnity/><p className="tech-icon-text">Unity</p></Col>
+            <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
+                {techStack && techStack.hobby && techStack.hobby.length > 0
+                    && techStack.hobby.map((o, idx) =>
+                            o?.title && o?.icon
+                            && <Col key={idx} xs={4} md={2} className="tech-icons">
+                                {isSVG(o.icon)
+                                    ? <InlineSVG src={`/Assets/images/icons/${o.icon}`} />
+                                    : <img alt={`${o.title}-icon`} src={`/Assets/images/icons/${o.icon}`} style={{ width: '1em', height: '1em' }} />}
+                                <p className="tech-icon-text">{o.title}</p>
+                            </Col>
+                    )}
             </Row>
         </Container>
     );

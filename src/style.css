@@ -984,6 +984,13 @@ button:focus {
     border: 2.2px solid var(--main-color) !important;
 }
 
+.tech-icons svg {
+    filter: brightness(100%) saturate(0%) !important;
+    stroke-width: revert-layer;
+    height: 1em;
+    width: 1em;
+}
+
 .tech-icon-images {
     padding: 20px !important;
     line-height: 1.6 !important;
