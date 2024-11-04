@@ -1,11 +1,22 @@
-import {FaEnvelope, FaLinkedinIn} from "react-icons/fa";
-import {AiFillGithub} from "react-icons/ai";
-import {SiLeetcode} from "react-icons/si";
+import { FaEnvelope, FaLinkedinIn } from "react-icons/fa";
+import { AiFillGithub } from "react-icons/ai";
+import { SiLeetcode } from "react-icons/si";
 import React from "react";
 import cvStyle from "../CV/Cv.module.css";
 
 export const Social = (props) => {
+    let myCvLink = "/cv/Roman_Surkov_Cv.pdf";
+    // // Проверяем, существует ли файл с загруженными данными
+    try {
+        const file = require("../../data/Roman_Surkov_CV_updated.pdf");
+        console.log("File has found: " + file)
+        myCvLink = "/cv/Roman_Surkov_CV_updated.pdf";
+    } catch (error) {
+        console.log("Using default local data");
+    }
+
     const iconsClassName = `${props.iconsStyle ? cvStyle[props.iconsStyle] : "icon-colour home-social-icons"}`;
+
     return <>
         <ul className={props.className ?? "home-about-social-links"}>
             <li className="social-icons" key={'s0'}>
@@ -54,8 +65,8 @@ export const Social = (props) => {
             </li>
             {props.iconsStyle && <li className="social-icons" key={'s4'}>
                 <a
-                    href="/cv/Roman_Surkov_Cv.pdf"
-                    download={"Roman_Surkov_Cv.pdf"}
+                    href={myCvLink}
+                    download={"Roman_Surkov_CV.pdf"}
                     target="_blank"
                     className={iconsClassName}
                     key={'as42'}

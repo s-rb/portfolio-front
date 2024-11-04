@@ -15,6 +15,10 @@ const PROJECT_IMAGES_API_URL = "https://api.github.com/repos/s-rb/site/contents/
 const ICONS_OUTPUT_DIR = path.resolve(__dirname, "../../public/assets/images/icons");
 const PROJECT_IMAGES_OUTPUT_DIR = path.resolve(__dirname, "../../public/assets/images/projects");
 
+const CV_URL = "https://github.com/s-rb/site/raw/master/assets/files/cv.pdf";
+const CV_OUTPUT_PATH = path.resolve(__dirname, "../../public/cv/Roman_Surkov_CV_updated.pdf");
+const TEMP_CV_OUTPUT_PATH = path.resolve(__dirname, "../data/Roman_Surkov_CV_updated.pdf");
+const DEFAULT_CV_PATH = path.resolve(__dirname, "../../public/cv/Roman_Surkov_CV.pdf");
 
 async function fetchData() {
     try {
@@ -155,6 +159,23 @@ async function fetchProjectImages() {
     }
 }
 
+// Основная функция загрузки PDF с проверкой существования файла
+async function fetchCV() {
+    try {
+        // Запрос на скачивание CV
+        const response = await fetch(CV_URL);
+        if (!response.ok) throw new Error("Failed to download CV");
+
+        // Сохранение файла, если скачивание прошло успешно
+        const cvBuffer = await response.buffer();
+        fs.writeFileSync(CV_OUTPUT_PATH, cvBuffer);
+        fs.writeFileSync(TEMP_CV_OUTPUT_PATH, cvBuffer);
+        console.log("CV file successfully downloaded and saved to:", CV_OUTPUT_PATH);
+    } catch (error) {
+        console.log("Error downloading CV. Using default CV file:", DEFAULT_CV_PATH);
+    }
+}
+
 async function fetchAll() {
     await fetchData();
     await wait(1000);
@@ -165,6 +186,8 @@ async function fetchAll() {
     await fetchProjects();
     await wait(1000);
     await fetchProjectImages();
+    await wait(1000);
+    await fetchCV();
 }
 
 fetchAll();
