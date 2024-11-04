@@ -5,15 +5,17 @@ const path = require("path");
 const {wait} = require("@testing-library/user-event/dist/utils");
 
 const DATA_URL = "https://raw.githubusercontent.com/s-rb/site/refs/heads/master/_data/work_experience.yml";
-const PROJECTS_DATA_URL = "https://raw.githubusercontent.com/s-rb/site/refs/heads/master/_data/projects.yml";
-const TECH_STACK_URL = "https://raw.githubusercontent.com/s-rb/site/refs/heads/master/_data/tech-stack.yml";
 const OUTPUT_PATH = path.resolve(__dirname, "../data/fetchedWorkExperience.json");
+
+const PROJECTS_DATA_URL = "https://raw.githubusercontent.com/s-rb/site/refs/heads/master/_data/projects.yml";
 const PROJECTS_OUTPUT_PATH = path.resolve(__dirname, "../data/fetchedProjects.json");
+const PROJECT_IMAGES_API_URL = "https://api.github.com/repos/s-rb/site/contents/assets/images/projects";
+const PROJECT_IMAGES_OUTPUT_DIR = path.resolve(__dirname, "../../public/assets/images/projects");
+
+const TECH_STACK_URL = "https://raw.githubusercontent.com/s-rb/site/refs/heads/master/_data/tech-stack.yml";
 const TECH_STACK_OUTPUT_PATH = path.resolve(__dirname, "../data/fetchedTechStack.json");
 const ICONS_API_URL = "https://api.github.com/repos/s-rb/site/contents/assets/images/icons";
-const PROJECT_IMAGES_API_URL = "https://api.github.com/repos/s-rb/site/contents/assets/images/projects";
 const ICONS_OUTPUT_DIR = path.resolve(__dirname, "../../public/assets/images/icons");
-const PROJECT_IMAGES_OUTPUT_DIR = path.resolve(__dirname, "../../public/assets/images/projects");
 
 const CV_URL = "https://github.com/s-rb/site/raw/master/assets/files/cv.pdf";
 const CV_OUTPUT_PATH = path.resolve(__dirname, "../../public/cv/Roman_Surkov_CV_updated.pdf");
