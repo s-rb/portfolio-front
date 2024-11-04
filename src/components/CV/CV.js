@@ -65,7 +65,7 @@ function CV() {
                 <h1 className="project-heading">ROMAN <span className="main-color">SURKOV</span></h1>
                 <Social className={styles.contacts} iconsStyle={'cvContactsIcons'}/>
                 <h1 className={styles.position}>Software engineer</h1>
-                <div className={styles.cvSummary}>{Summary}</div>
+                <div className={styles.cvSummary}><Summary description={experienceData?.description}/></div>
 
                 <h2 className={styles.cvTitle}>Core Competencies</h2>
                 <ul className={styles.cvCompetencies}>
