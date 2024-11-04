@@ -69,16 +69,6 @@ function NavBar() {
                     <Nav.Item>
                         <Nav.Link
                             as={Link}
-                            to="https://surkoff.com/blog"
-                            onClick={() => updateExpanded(false)}
-                        >
-                            <GiNotebook style={{marginBottom: "2px"}}/> Blog
-                        </Nav.Link>
-                    </Nav.Item>
-
-                    <Nav.Item>
-                        <Nav.Link
-                            as={Link}
                             to="/stack"
                             onClick={() => updateExpanded(false)}
                         >
@@ -120,6 +110,16 @@ function NavBar() {
                                 style={{marginBottom: "2px"}}
                             />{" "}
                             Contacts
+                        </Nav.Link>
+                    </Nav.Item>
+
+                    <Nav.Item>
+                        <Nav.Link
+                            as={Link}
+                            to="https://surkoff.com/blog"
+                            onClick={() => updateExpanded(false)}
+                        >
+                            <GiNotebook style={{marginBottom: "2px"}}/> Blog
                         </Nav.Link>
                     </Nav.Item>
                 </Nav>
