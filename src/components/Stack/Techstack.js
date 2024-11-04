@@ -54,8 +54,8 @@ function Techstack() {
                             o?.title && o?.icon
                             && <Col key={idx} xs={4} md={2} className="tech-icons">
                                 {isSVG(o.icon)
-                                    ? <InlineSVG src={`/Assets/images/icons/${o.icon}`} />
-                                    : <img alt={`${o.title}-icon`} src={`/Assets/images/icons/${o.icon}`} style={{ width: '1em', height: '1em' }} />}
+                                    ? <InlineSVG src={`/assets/images/icons/${o.icon}`} />
+                                    : <img alt={`${o.title}-icon`} src={`/assets/images/icons/${o.icon}`} style={{ width: '1em', height: '1em' }} />}
                                 <p className="tech-icon-text">{o.title}</p>
                             </Col>
                     )}
@@ -67,8 +67,8 @@ function Techstack() {
                         o?.title && o?.icon
                         && <Col key={idx} xs={4} md={2} className="tech-icons">
                             {isSVG(o.icon)
-                                ? <InlineSVG src={`/Assets/images/icons/${o.icon}`} />
-                                : <img alt={`${o.title}-icon`} src={`/Assets/images/icons/${o.icon}`} style={{ width: '1em', height: '1em' }} />}
+                                ? <InlineSVG src={`/assets/images/icons/${o.icon}`} />
+                                : <img alt={`${o.title}-icon`} src={`/assets/images/icons/${o.icon}`} style={{ width: '1em', height: '1em' }} />}
                             <p className="tech-icon-text">{o.title}</p>
                         </Col>
                 )}
@@ -80,8 +80,8 @@ function Techstack() {
                             o?.title && o?.icon
                             && <Col key={idx} xs={4} md={2} className="tech-icons">
                                 {isSVG(o.icon)
-                                    ? <InlineSVG src={`/Assets/images/icons/${o.icon}`} />
-                                    : <img alt={`${o.title}-icon`} src={`/Assets/images/icons/${o.icon}`} style={{ width: '1em', height: '1em' }} />}
+                                    ? <InlineSVG src={`/assets/images/icons/${o.icon}`} />
+                                    : <img alt={`${o.title}-icon`} src={`/assets/images/icons/${o.icon}`} style={{ width: '1em', height: '1em' }} />}
                                 <p className="tech-icon-text">{o.title}</p>
                             </Col>
                     )}

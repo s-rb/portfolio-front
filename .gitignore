@@ -197,3 +197,6 @@ $RECYCLE.BIN/
 
 # End of https://www.toptal.com/developers/gitignore/api/react,windows,linux,macos
 /build/
+/src/data/fetchedProjects.json
+/src/data/fetchedTechStack.json
+/src/data/fetchedWorkExperience.json

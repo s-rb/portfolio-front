@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-import logo from "../Assets/logo-clean.svg";
+import logo from "../assets/logo-clean.svg";
 import {Link} from "react-router-dom";
 import {
     AiOutlineHome,
