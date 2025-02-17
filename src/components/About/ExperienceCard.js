@@ -13,7 +13,7 @@ function ExperienceCard() {
         console.log("Using default local data");
     }
 
-    const expData = [].concat(...experienceData.experience, ...experienceData.not_relevant_experience);
+    const expData = [].concat(...experienceData.experience, ...experienceData.engineering_experience);
 
     return (
         <Card className="quote-card-view">

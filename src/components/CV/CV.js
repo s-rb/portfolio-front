@@ -76,7 +76,6 @@ function CV() {
                 {experienceData.experience.map((data, idx) =>
                     getExperienceBlock(`ed_${data.position}_${idx}`, data, experienceData.companies))}
 
-                <h2 className={styles.cvTitle}>Engineering professional experience</h2>
                 {experienceData.engineering_experience.map((data, idx) =>
                     getExperienceBlock(`eed_${data.position}_${idx}`, data, experienceData.companies))}
 
