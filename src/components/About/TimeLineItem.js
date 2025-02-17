@@ -10,10 +10,11 @@ export const TimeLineItem = ({data, companies, theKey}) => {
                     {data.period && <Card.Text className="timeline-period">{data.period.started} - {data.period.finished ? data.period.finished : 'now'}</Card.Text>}
                     {data.position && <Card.Title className="timeline-company">{data.position}</Card.Title>}
                     {data.company && <Card.Link className="timeline-company-url"
-                                                     href={companies[data.company].url}
+                                                     href={companies[data.company] ? companies[data.company].url : companies["Ey"].url}
                                                      target="_blank"
                                                      rel="noopener noreferrer"
-                    >{companies[data.company].name ? companies[data.company].name : data.company}</Card.Link>}
+                    >{companies[data.company] && companies[data.company].name ? companies[data.company].name : data.company}
+                    </Card.Link>}
                     <span className="circle"/>
                 </Card.Body>
             </Card>

@@ -4,7 +4,7 @@ const fs = require("fs");
 const path = require("path");
 const {wait} = require("@testing-library/user-event/dist/utils");
 
-const DATA_URL = "https://raw.githubusercontent.com/s-rb/site/refs/heads/master/_data/work_experience.yml";
+const DATA_URL = "https://raw.githubusercontent.com/s-rb/site/refs/heads/master/_data/cv_data.yml";
 const OUTPUT_PATH = path.resolve(__dirname, "../data/fetchedWorkExperience.json");
 
 const PROJECTS_DATA_URL = "https://raw.githubusercontent.com/s-rb/site/refs/heads/master/_data/projects.yml";
