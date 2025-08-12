@@ -67,6 +67,9 @@ function CV() {
                 <h1 className={styles.position}>Software engineer</h1>
                 <div className={styles.cvSummary}><Summary description={experienceData?.description}/></div>
 
+                <h2 className={styles.cvTitle}>Selected achievements</h2>
+                <div className={styles.cvSummary}><Summary description={experienceData?.selected_achievements}/></div>
+
                 <h2 className={styles.cvTitle}>Core Competencies</h2>
                 <ul className={styles.cvCompetencies}>
                     {experienceData["core-competencies"].map((o, idx) => <li key={`ccn_${o}_${idx}`}>{o.replaceAll("&nbsp;", " ")}</li>)}
