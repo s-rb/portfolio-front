@@ -62,7 +62,7 @@ function App() {
           <Route key={"ap04"} path="/about" element={<About />} />
           <Route key={"ap06"} path="/stack" element={<Stack />} />
           <Route key={"ap07"} path="/contacts" element={<Contacts />} />
-          <Route key={"ap09"} path="https://surkoff.com/blog" />
+          <Route key={"ap09"} path="https://site.surkoff.com/blog" />
           <Route key={"ap08"} path="*" element={<Navigate to="/"/>} />
         </Routes>
         <Footer />
