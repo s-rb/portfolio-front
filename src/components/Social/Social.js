@@ -32,7 +32,7 @@ export const Social = (props) => {
             </li>
             <li className="social-icons" key={'s1'}>
                 <a
-                    href="mailto:surkoff.com@google.com"
+                    href="mailto:surkoff.com@gmail.com"
                     target="_blank"
                     rel="noreferrer"
                     className={iconsClassName}

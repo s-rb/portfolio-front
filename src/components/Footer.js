@@ -40,7 +40,7 @@ function Footer() {
 
                         <li className="social-icons" key={'fs1'}>
                             <a
-                                href="mailto:surkoff.com@google.com"
+                                href="mailto:surkoff.com@gmail.com"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 style={{color: "white"}}
